@@ -1,0 +1,69 @@
+.bgimg {
+  background-image: url("../../images/mainpageimage.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 4rem;
+}
+
+/* --------------------------------- NavBar --------------------------------- */
+
+.nav {
+  background-color: rgba(226, 206, 187, 0.096);
+  height: 9rem;
+  display: flex;
+
+  &__logo {
+    margin-top: 1rem;
+  }
+
+  &__logo-heading {
+    padding-left: 10rem;
+    height: 7.3rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #f3efde;
+  }
+
+  &__list {
+    width: 150rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6rem;
+  }
+
+  &__list-items {
+    margin: 3rem;
+    align-items: center;
+  }
+
+  &__list-link {
+    margin: 3rem;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  &__icons-list {
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 12rem;
+  }
+
+  &__icons-list-item {
+    margin: 2rem;
+  }
+
+  &__icons {
+    height: 3.8rem;
+    width: 3.5rem;
+  }
+}
+
+

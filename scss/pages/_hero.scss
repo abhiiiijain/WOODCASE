@@ -1,0 +1,42 @@
+/* ------------------------------- HeroSection ------------------------------ */
+
+.section {
+  text-align: center;
+  color: $primary-color;
+  height: 50vh;
+  position: relative;
+
+  &__main-heading {
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%);
+    justify-content: center;
+    font-family: "Noto Sans JP";
+    font-size: 4rem;
+  }
+
+  &__sub-heading {
+    font-size: 2rem;
+    position: absolute;
+    left: 50.5%;
+    top: 73%;
+    font-family: "Ubuntu Mono";
+    transform: translate(-50%);
+  }
+}
+
+.main__icon-box {
+  position: absolute;
+  text-align: center;
+  font-size: 2.5rem;
+  border-style: solid;
+  border-color: #f3efde;
+  width: 35rem;
+  height: 10rem;
+  left: 87%;
+  top: 85%;
+  transform: translate(-50%,-50%);
+  padding-top: 3rem;
+  font-family: "Ubuntu Mono";
+}

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  background: #fdfdfd;
+  font-family: 'lato';
+  margin: 0;
+  padding: 0; }
+
+a, h1, h3 {
+  text-decoration: none;
+  color: #EBE7D9;
+  font-weight: normal; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+.bgimg {
+  background-image: url("../../images/mainpageimage.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 4rem; }
+
+/* --------------------------------- NavBar --------------------------------- */
+.nav {
+  background-color: rgba(226, 206, 187, 0.096);
+  height: 9rem;
+  display: flex; }
+  .nav__logo {
+    margin-top: 1rem; }
+  .nav__logo-heading {
+    padding-left: 10rem;
+    height: 7.3rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #f3efde; }
+  .nav__list {
+    width: 150rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6rem; }
+  .nav__list-items {
+    margin: 3rem;
+    align-items: center; }
+  .nav__list-link {
+    margin: 3rem;
+    align-items: center;
+    font-size: 2rem; }
+  .nav__icons-list {
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 12rem; }
+  .nav__icons-list-item {
+    margin: 2rem; }
+  .nav__icons {
+    height: 3.8rem;
+    width: 3.5rem; }
+
+/* ------------------------------- HeroSection ------------------------------ */
+.section {
+  text-align: center;
+  color: #EBE7D9;
+  height: 50vh;
+  position: relative; }
+  .section__main-heading {
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%);
+    justify-content: center;
+    font-family: "Noto Sans JP";
+    font-size: 4rem; }
+  .section__sub-heading {
+    font-size: 2rem;
+    position: absolute;
+    left: 50.5%;
+    top: 73%;
+    font-family: "Ubuntu Mono";
+    transform: translate(-50%); }
+
+.main__icon-box {
+  position: absolute;
+  text-align: center;
+  font-size: 2.5rem;
+  border-style: solid;
+  border-color: #f3efde;
+  width: 35rem;
+  height: 10rem;
+  left: 87%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  padding-top: 3rem;
+  font-family: "Ubuntu Mono"; }
