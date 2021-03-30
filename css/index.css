@@ -6,13 +6,14 @@ html {
 
 body {
   background: #fdfdfd;
-  font-family: 'lato';
+  font-family: "lato";
   margin: 0;
   padding: 0; }
 
-a, h1, h3 {
+a,
+h1 {
   text-decoration: none;
-  color: #EBE7D9;
+  color: #f3efde;
   font-weight: normal; }
 
 *,
@@ -20,12 +21,9 @@ a, h1, h3 {
 *::before {
   box-sizing: inherit; }
 
-.bgimg {
-  background-image: url("../../images/mainpageimage.png");
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  padding-top: 4rem; }
+::selection {
+  background-color: #8d6b51;
+  color: #f3efde; }
 
 /* --------------------------------- NavBar --------------------------------- */
 .nav {
@@ -42,7 +40,8 @@ a, h1, h3 {
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
-    color: #f3efde; }
+    color: #f3efde;
+    font-weight: bold; }
   .nav__list {
     width: 150rem;
     display: flex;
@@ -62,7 +61,7 @@ a, h1, h3 {
     justify-content: center;
     align-items: center;
     display: flex;
-    padding-left: 12rem; }
+    padding-left: 5rem; }
   .nav__icons-list-item {
     margin: 2rem; }
   .nav__icons {
@@ -70,37 +69,117 @@ a, h1, h3 {
     width: 3.5rem; }
 
 /* ------------------------------- HeroSection ------------------------------ */
+.bgimg {
+  background-image: url("../../images/mainpageimage.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 4rem; }
+
 .section {
   text-align: center;
-  color: #EBE7D9;
+  color: #f3efde;
   height: 50vh;
   position: relative; }
   .section__main-heading {
     position: absolute;
     left: 50%;
-    top: 43%;
-    transform: translate(-50%);
+    top: 57%;
+    transform: translate(-50%, -50%);
     justify-content: center;
     font-family: "Noto Sans JP";
     font-size: 4rem; }
   .section__sub-heading {
     font-size: 2rem;
     position: absolute;
-    left: 50.5%;
-    top: 73%;
+    left: 50%;
+    top: 70%;
     font-family: "Ubuntu Mono";
-    transform: translate(-50%); }
+    transform: translate(-50%, -50%); }
 
-.main__icon-box {
+.div-Explore-button {
   position: absolute;
+  right: 1.5rem;
+  bottom: 10rem;
+  transform: translate(-50%, -50%); }
+
+/* -------------------------------- artisian -------------------------------- */
+.section-artisian {
+  display: flex;
+  justify-content: space-between; }
+
+.artisian__heading {
+  font-size: 5rem;
+  font-family: Ubuntu Mono;
+  margin: 0;
+  padding-top: 8rem;
+  padding-left: 20rem; }
+
+.artisian__subheading {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 20rem;
+  width: 3rem; }
+
+.artisian__content {
+  font-size: 2.5rem;
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-left: 20rem;
+  width: 49rem;
+  margin-bottom: 9rem; }
+
+.btn-explore {
+  margin-left: 20rem; }
+
+/* ------------------------------ new arrivals ----------------------------- */
+.newarrival__icon-box {
+  padding: 2rem 0 5rem 0;
+  margin-top: 5rem;
+  margin-left: 20rem; }
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.newarrival {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  justify-content: center; }
+  .newarrival__horizontal {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    width: 30rem;
+    height: 18rem; }
+
+.btn-arrival {
+  margin: 2rem 0 1rem 5rem;
+  padding: 2rem 5rem; }
+
+.section-shelfmate {
+  background-image: url("../../images/Collactables/background.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover; }
+
+.btn-primary {
   text-align: center;
   font-size: 2.5rem;
-  border-style: solid;
-  border-color: #f3efde;
-  width: 35rem;
-  height: 10rem;
-  left: 87%;
-  top: 85%;
-  transform: translate(-50%, -50%);
-  padding-top: 3rem;
+  border: solid 1px #00000083;
+  padding: 2rem 7rem;
+  color: #252525da;
+  font-family: "Ubuntu Mono"; }
+
+.btn-secondary {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f3efde;
+  border: solid 2px #f3efde;
+  padding: 3rem 10rem;
   font-family: "Ubuntu Mono"; }

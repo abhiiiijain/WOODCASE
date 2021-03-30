@@ -1,38 +1,46 @@
-// Html tags 
+// Html tags
 // Body Tags
-// import all fonts 
+// import all fonts
 // All variables are declared here
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 // font-family: 'Lato', sans-serif;
 // font-family: 'Noto Sans JP', sans-serif; font-weight: 300, 400
 // font-family: 'Ubuntu Mono'
-$background-color: #EEEEEE;
-$primary-color: #EBE7D9;
 
-html{
-    font-size: 62.5%; // 10px
-    box-sizing: border-box;
+$background-color: #eeeeee;
+$primary-color: #f3efde;
+
+html {
+  font-size: 62.5%; // 10px
+  box-sizing: border-box;
 }
 
-body{
-    background: #fdfdfd;
-    font-family: 'lato';
-    margin: 0;
-    padding: 0;
+body {
+  background: #fdfdfd;
+  font-family: "lato";
+  margin: 0;
+  padding: 0;
 }
 
-a,h1,h3 {
-    text-decoration: none;
-    color: $primary-color;
-    font-weight: normal;
+a,
+h1{
+  text-decoration: none;
+  color: #f3efde;
+  font-weight: normal;
 }
+
 
 *,
 *::after,
-*::before{
-    box-sizing: inherit;
+*::before {
+  box-sizing: inherit;
 }
 
+
+::selection { //change highlight color
+  background-color: #8d6b51;
+  color: #f3efde;
+}

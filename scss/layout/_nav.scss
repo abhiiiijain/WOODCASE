@@ -1,10 +1,3 @@
-.bgimg {
-  background-image: url("../../images/mainpageimage.png");
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  padding-top: 4rem;
-}
 
 /* --------------------------------- NavBar --------------------------------- */
 
@@ -26,6 +19,7 @@
     justify-content: center;
     font-size: 2.5rem;
     color: #f3efde;
+    font-weight: bold;
   }
 
   &__list {
@@ -53,7 +47,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    padding-left: 12rem;
+    padding-left: 5rem;
   }
 
   &__icons-list-item {
