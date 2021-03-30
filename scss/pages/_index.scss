@@ -1,0 +1,120 @@
+/* ------------------------------- HeroSection ------------------------------ */
+.bgimg {
+  background-image: url("../../images/mainpageimage.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 4rem;
+}
+.section {
+  text-align: center;
+  color: $primary-color;
+  height: 50vh;
+  position: relative;
+
+  &__main-heading {
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    font-family: "Noto Sans JP";
+    font-size: 4rem;
+  }
+
+  &__sub-heading {
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-family: "Ubuntu Mono";
+    transform: translate(-50%, -50%);
+  }
+}
+
+.div-Explore-button {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 10rem;
+  transform: translate(-50%, -50%);
+}
+
+/* -------------------------------- artisian -------------------------------- */
+.section-artisian {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artisian__heading {
+  font-size: 5rem;
+  font-family: Ubuntu Mono;
+  margin: 0;
+  padding-top: 8rem;
+  padding-left: 20rem;
+}
+
+.artisian__subheading {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 20rem;
+  width: 3rem;
+}
+
+.artisian__content {
+  font-size: 2.5rem;
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-left: 20rem;
+  width: 49rem;
+  margin-bottom: 9rem;
+}
+
+.btn-explore {
+  margin-left: 20rem;
+}
+
+/* ------------------------------ new arrivals ----------------------------- */
+
+.newarrival__icon-box {
+  padding: 2rem 0 5rem 0;
+  margin-top: 5rem;
+  margin-left: 20rem;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newarrival {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  justify-content: center;
+
+  &__horizontal {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    width: 30rem;
+    height: 18rem;
+  }
+}
+
+.btn-arrival {
+  margin: 2rem 0 1rem 5rem;
+  padding: 2rem 5rem;
+}
+
+.section-shelfmate {
+  background-image: url("../../images/Collactables/background.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+
+}
+
