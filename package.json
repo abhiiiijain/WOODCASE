@@ -6,7 +6,7 @@
   "scripts": {
     "watch:scss": "node-sass ./scss/index.scss ./css/index.css -w"
   },
-  "author": "Arpit,Abhinandan,Anaya",
+  "author": "Arpit,Abhinandan,Ananya",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
