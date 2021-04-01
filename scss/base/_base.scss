@@ -23,11 +23,14 @@ html {
 }
 
 body {
-  background: #fdfdfd;
+
   font-family: "lato";
   margin: 0;
   padding: 0;
 
+}
+.u-overflow {
+  overflow: hidden;
 }
 
 a,

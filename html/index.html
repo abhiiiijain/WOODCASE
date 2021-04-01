@@ -12,9 +12,40 @@
   </head>
 
   <body>
-    <!-- ---------------------------- nav beginning ---------------------------- -->
+    <!-- ---------------------------- hamburger nav beginning ---------------------------- -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toogle" />
+			<label for="navi-toogle" class="navigation__button">
+				<span class="navigation__icon">&nbsp;</span>
+			</label>
+			<div class="navigation__background">&nbsp;</div>
 
-    <header class="bgimg-hero">
+      <nav class="navigation__nav-ham">
+        <ul class="navigation__list">
+          <li class="navigation__item" style="width: 400px; margin: 3rem">
+            <a href="#" class="navigation__link">Shop</a>
+          </li>
+          <li class="navigation__item" style="width: 400px; margin: 3rem">
+            <a href="#" class="navigation__link">Collections</a>
+          </li>
+          <li class="navigation__item" style="width: 400px; margin: 3rem">
+            <a href="#" class="navigation__link">New Arrival</a>
+          </li>
+          <li class="navigation__item" style="width: 400px; margin: 3rem">
+            <a href="#" class="navigation__link"></a>
+          </li>
+          <li class="navigation__item" style="width: 400px; margin: 3rem">
+            <a href="#" class="navigation__link">Services</a>
+          </li>
+          <li class="navigation__item" style="width: 400px; margin: 3rem">
+            <a href="#" class="navigation__link">Basket</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+      <!-- -------------------------- navbar --------------------------- -->
+
+    <header class="bgimg-hero u-overflow">
       <nav class="nav">
         <div class="nav__logo">
           <li><a href="#" class="nav__logo-heading">WOODCASE</a></li>
@@ -58,8 +89,6 @@
 
       <!-- ----------------------------- nav ending ------------------------------ -->
 
-      <!-- --------------------------- main beginning ---------------------------- -->
-
       <!-- ------------------------------ Main section ------------------------------ -->
 
       <section class="hero">
@@ -99,7 +128,7 @@
 
     <!-- --------------------------------- btn --------------------------------- -->
 
-    <section class="section-newarrival">
+    <section>
       <div class="newarrival__heading">NEW ARRIVALS</div>
 
       <!-- ----------------------------- btn ending ------------------------------ -->
@@ -215,7 +244,9 @@
     <!-- -------------------------- shelfmate section -------------------------- -->
     <section class="section-shelfmate">
       <div class="shelfmate-button">
-        <a href="./shelfmate.html" class="btn-primary shelfmate__btn">EXPLORE</a>
+        <a href="./shelfmate.html" class="btn-primary shelfmate__btn"
+          >EXPLORE</a
+        >
       </div>
       <img
         class="shelfmate-scribble scribble-left"
@@ -235,7 +266,8 @@
     <!-- -------------------------- footer beginning --------------------------- -->
 
     <footer class="footer">
-      <ul class="footer__list"><div class="footer-content footer__left-content">Services</div>
+      <ul class="footer__list">
+        <div class="footer-content footer__left-content">Services</div>
         <li class="footer__list-item">
           <a href="#" class="footer__list-link">Installation Service</a>
         </li>
@@ -249,7 +281,8 @@
           <a href="#" class="footer__list-link">Customer Service</a>
         </li>
       </ul>
-      <ul class="footer__list"><div class="footer-content">Support</div>
+      <ul class="footer__list">
+        <div class="footer-content">Support</div>
         <li class="footer__list-item">
           <a href="#" class="footer__list-link">Return Policy</a>
         </li>
@@ -266,7 +299,8 @@
           <a href="#" class="footer__list-link">FAQ'S</a>
         </li>
       </ul>
-      <ul class="footer__list"><div class="footer-content footer__right-content">About</div>
+      <ul class="footer__list">
+        <div class="footer-content footer__right-content">About</div>
         <li class="footer__list-item">
           <a href="#" class="footer__list-link">Stores</a>
         </li>
