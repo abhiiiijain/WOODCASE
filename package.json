@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:scss": "node-sass ./scss/index.scss ./css/index.css -w"
+    "watch:index": "node-sass ./scss/index.scss ./css/index.css -w",
+    "watch:shelfmate": "node-sass ./scss/shelfmate.scss ./css/shelfmate.css -w"
   },
   "author": "Arpit,Abhinandan,Ananya",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "node-sass": "^5.0.0"
   }
