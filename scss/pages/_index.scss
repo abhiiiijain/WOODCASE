@@ -6,6 +6,10 @@
   background-size: cover;
   background-position: center;
   padding-top: 4rem;
+
+  @media screen and (max-width: 800px) {
+    background-image: url(../../images/home-mobile-desktop.jpg);
+  }
 }
 
 .hero {
@@ -21,6 +25,15 @@
     top: 50%;
     transform: translate(-50%, -50%);
     padding-bottom: 5rem;
+
+    @media screen and (max-width: 400px) {
+      font-size: 8rem !important;
+      width: 90%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: #ffffff;
+    }
   }
 
   &__sub-heading {
@@ -28,6 +41,13 @@
     left: 50%;
     top: 70%;
     transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 400px) {
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 62%;
+    }
   }
 
   &__btn {
@@ -35,6 +55,12 @@
     right: 10rem;
     bottom: -20rem;
     z-index: 1;
+
+    @media screen and (max-width: 400px) {
+      position: absolute;
+      left: 10rem;
+      top: 100rem;
+    }
   }
 }
 
@@ -44,6 +70,7 @@
   justify-content: space-between;
   border-bottom: solid #f3efde;
   height: 106vh;
+  overflow: hidden;
 
   @media screen and (max-width: 1500px) {
     height: 100vh;
@@ -51,6 +78,16 @@
 
   @media screen and (max-width: 1200px) {
     height: 80vh;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+    position: relative;
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding-top: 7rem;
   }
 
   &__heading {
@@ -62,6 +99,14 @@
 
     @media screen and (max-width: 1200px) {
       padding-left: 15rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 7rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 8rem;
     }
   }
 
@@ -75,6 +120,14 @@
 
     @media screen and (max-width: 1200px) {
       padding-left: 15rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 3rem;
     }
   }
 
@@ -93,15 +146,36 @@
     @media screen and (max-width: 1200px) {
       padding-left: 15rem;
     }
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 5rem;
+      font-size: 4rem;
+      width: 72rem;
+      margin-bottom: 10rem;
+    }
   }
 
   &__img {
     height: 100%;
+
+    @media screen and (max-width: 1024px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      opacity: 0.98;
+      width: 100%;
+      filter: brightness(70%);
+    }
   }
 
   &__btn {
     color: #000 !important;
     border-color: #b6b6b693 !important;
+
+    @media screen and (max-width: 1024px) {
+      color: #ffffff !important;
+    }
 
     &:hover {
       transition: all 0.3s;
@@ -135,6 +209,16 @@
   margin-right: 5rem;
   justify-content: center;
 
+  @media screen and (max-width: 1024px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   &__horizontal {
     margin-top: 5rem;
     margin-left: 5rem;
@@ -151,6 +235,16 @@
     font-size: 3rem;
     border-bottom: 0.2rem solid #8d6b51bb;
     width: 18rem;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 10rem;
+      margin-left: 4rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 8rem;
+      margin-left: 4rem;
+    }
   }
 }
 
@@ -170,6 +264,7 @@
   width: 100%;
   height: 105vh;
   background-size: cover;
+  overflow: hidden;
 }
 
 .shelfmate-button {
@@ -181,6 +276,11 @@
   @media screen and (max-width: 1200px) {
     top: 75rem;
     left: 45rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    top: 100rem;
+    left: 20rem;
   }
 }
 
@@ -217,6 +317,12 @@
     top: 5rem;
     left: 23rem;
   }
+
+  @media screen and (max-width: 400px) {
+    top: 13rem;
+    left: 0rem;
+    width: 20rem;
+  }
 }
 
 .heading__shelfmate {
@@ -245,6 +351,12 @@
     top: 0rem;
     left: 30rem;
   }
+
+  @media screen and (max-width: 400px) {
+    top: 7rem;
+    left: 5rem;
+    font-size: 10rem;
+  }
 }
 
 .scribble-right {
@@ -272,5 +384,11 @@
   @media screen and (max-width: 1200px) {
     top: 0rem;
     left: 74rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    top: 15rem;
+    left: 52rem;
+    width: 20rem;
   }
 }

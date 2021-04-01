@@ -1,20 +1,44 @@
 .footer {
+  width: 100%;
   background-color: #000000b6;
   color: #ebe7d9;
   display: flex;
   font-size: 2rem;
   text-decoration: none;
+  // overflow: hidden;
 
-  
+  @media screen and (max-width: 1024px) {
+    height: 50vh;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 42vh;
+  }
 
   &__list {
     margin-left: 10%;
     margin-right: 10%;
+
+    @media screen and (max-width: 800px) {
+      margin-left: 2%;
+      margin-right: 5%;
+    }
   }
 
   &__list-item {
     list-style-type: none;
     padding-top: 4rem;
+    @media screen and (max-width: 1025px) {
+      padding-bottom: 15rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      padding-top: 5rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      padding-bottom: 2rem;
+    }
   }
   &__list-link {
     padding-top: 2rem;
@@ -33,7 +57,7 @@
   }
 
   &__left-content {
-    width: 14.5rem;
+    width: 11rem;
   }
 
   &__right-content {

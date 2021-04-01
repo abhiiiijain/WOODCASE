@@ -1,6 +1,7 @@
 .navigation {
-  @media screen and (min-width: 700px) {
-    display: none;
+  display: none;
+  @media screen and (max-width: 1024px) {
+    display: block;
   }
 
   &__checkbox {
@@ -9,12 +10,12 @@
 
   &__button {
     background-color: #f3efde;
-    height: 7rem;
-    width: 7rem;
+    height: 9rem;
+    width: 9rem;
     border-radius: 50%;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 7rem;
+    right: 4rem;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(#000, 0.2);
     text-align: center;
@@ -22,12 +23,12 @@
   }
 
   &__background {
-    height: 6rem;
-    width: 6rem;
+    height: 8rem;
+    width: 8rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
+    top: 7.5rem;
+    right: 4rem;
     background-image: radial-gradient(#8d6b519d, #7c451be1);
     z-index: 1000;
     transition: transform 0.8s;
@@ -47,11 +48,10 @@
   &__list {
     position: absolute;
     top: 50%;
-    left: 87%;
+    left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
-    width: 100%;
   }
 
   &__item {
@@ -97,12 +97,12 @@
 
   &__icon {
     position: relative;
-    margin-top: 3.4rem;
+    margin-top: 4.2rem;
 
     &,
     &::before,
     &::after {
-      width: 3rem;
+      width: 4rem;
       height: 2px;
       background-color: #8d6b51cb;
       display: inline-block;
@@ -117,11 +117,11 @@
     }
 
     &::before {
-      top: -0.8rem;
+      top: -1rem;
     }
 
     &::after {
-      top: 0.8rem;
+      top: 1rem;
     }
   }
 

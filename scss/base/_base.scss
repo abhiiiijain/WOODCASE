@@ -18,16 +18,22 @@ html {
   box-sizing: border-box;
 
   @media screen and (max-width: 1400px) {
-      font-size: 50%;
-    }
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 40%;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 30%;
+  }
 }
 
 body {
-
   font-family: "lato";
   margin: 0;
   padding: 0;
-
 }
 .u-overflow {
   overflow: hidden;
