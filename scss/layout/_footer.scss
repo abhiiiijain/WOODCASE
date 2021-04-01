@@ -1,0 +1,42 @@
+.footer {
+  background-color: #000000b6;
+  color: #ebe7d9;
+  display: flex;
+  font-size: 2rem;
+  text-decoration: none;
+  height: 60vh;
+
+  &__list {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  &__list-item {
+    list-style-type: none;
+    padding-top: 4rem;
+    
+}
+&__list-link {
+    padding-top: 2rem;
+}
+
+&__list-link:hover {
+    text-decoration: underline 1px;
+}
+
+&-content {
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    width: 14rem;
+  }
+
+  &__left-content {
+    width: 14.5rem;
+  }
+
+  &__right-content {
+    width: 11rem;
+  }
+}

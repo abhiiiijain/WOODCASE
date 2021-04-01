@@ -78,7 +78,7 @@ h1 {
     width: 3.5rem; }
 
 /* ------------------------------- HeroSection ------------------------------ */
-.bgimg {
+.bgimg-hero {
   background-image: url("../../images/Hero_home__desktop_.jpg");
   width: 100%;
   height: 100vh;
@@ -86,61 +86,62 @@ h1 {
   background-position: center;
   padding-top: 4rem; }
 
-.section {
+.hero {
   text-align: center;
   color: #f3efde;
   height: 50vh;
-  position: relative; }
-  .section__main-heading {
+  position: relative !important; }
+  .hero__main-heading {
+    font-size: 7rem !important;
     position: absolute;
     left: 50%;
-    top: 57%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    font-family: "Noto Sans JP";
-    font-size: 4rem; }
-  .section__sub-heading {
-    font-size: 2rem;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .hero__sub-heading {
     position: absolute;
     left: 50%;
     top: 70%;
-    font-family: "Ubuntu Mono";
     transform: translate(-50%, -50%); }
-
-.sec-button {
-  position: absolute;
-  right: 1.5rem;
-  bottom: 10rem;
-  transform: translate(-50%, -50%); }
+  .hero__btn {
+    position: absolute;
+    right: 10rem;
+    bottom: -20rem;
+    z-index: 1; }
 
 /* -------------------------------- artisian -------------------------------- */
-.section-artisian {
+.artisian {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid #f3efde; }
-
-.artisian__heading {
-  font-size: 5rem;
-  font-family: Ubuntu Mono;
-  margin: 0;
-  padding-top: 8rem;
-  padding-left: 20rem; }
-
-.artisian__subheading {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding-top: 0.5rem;
-  padding-left: 20rem;
-  width: 3rem; }
-
-.artisian__content {
-  font-size: 2.5rem;
-  margin-top: 0;
-  padding-top: 2rem;
-  padding-left: 20rem;
-  width: 49rem;
-  margin-bottom: 9rem; }
+  border-bottom: solid #f3efde;
+  height: 106vh; }
+  .artisian__heading {
+    font-size: 5rem;
+    font-family: Ubuntu Mono;
+    margin: 0;
+    padding-top: 8rem;
+    padding-left: 20rem; }
+  .artisian__subheading {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 20rem;
+    width: 3rem; }
+  .artisian__para {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-left: 20rem;
+    width: 49rem;
+    margin-bottom: 9rem; }
+  .artisian__img {
+    height: 100%; }
+  .artisian__btn {
+    color: #000 !important;
+    border-color: #b6b6b693 !important; }
+    .artisian__btn:hover {
+      transition: all 0.3s;
+      border-color: #ffffff !important; }
 
 .btn-explore {
   margin-left: 20rem; }
@@ -150,15 +151,11 @@ h1 {
   width: 100%;
   height: 100vh; }
 
-.newarrival__icon-box {
-  padding: 2rem 0 5rem 0;
-  margin-top: 5rem;
-  margin-left: 20rem; }
-
 .img-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 5rem; }
 
 .newarrival {
   display: flex;
@@ -172,6 +169,15 @@ h1 {
     margin-left: 5rem;
     width: 30rem;
     height: 18rem; }
+  .newarrival__heading {
+    margin-top: 5rem;
+    margin-left: 14rem;
+    font-size: 2.5rem;
+    color: #252525da;
+    font-family: "Ubuntu Mono";
+    font-size: 3rem;
+    border-bottom: 0.2rem solid #8d6b51bb;
+    width: 18rem; }
 
 .btn-arrival {
   margin: 2rem 0 1rem 5rem;
@@ -185,7 +191,7 @@ h1 {
   background-position: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   background-size: cover; }
 
 .shelfmate-button {
@@ -215,21 +221,7 @@ h1 {
   top: 56rem;
   width: 35rem; }
 
-/* --------------------------------- footer --------------------------------- */
 .btn-primary {
-  text-align: center;
-  font-size: 2.5rem;
-  border: solid 1px #00000083;
-  padding: 2rem 7rem;
-  color: #252525da;
-  font-family: "Ubuntu Mono";
-  transition: color 0.3s ease-out; }
-  .btn-primary:hover {
-    color: #8d6b51bb;
-    border-color: #8d6b51bb;
-    border-radius: 0.5rem; }
-
-.btn-secondary {
   text-align: center;
   font-size: 2.5rem;
   color: #f3efde;
@@ -237,9 +229,8 @@ h1 {
   padding: 3rem 10rem;
   font-family: "Ubuntu Mono";
   position: relative;
-  overflow: hidden;
   transition: 0.5s; }
-  .btn-secondary::before {
+  .btn-primary::before {
     content: "";
     position: absolute;
     left: 0;
@@ -250,11 +241,24 @@ h1 {
     top: 0;
     border-radius: 1rem;
     z-index: -1; }
-  .btn-secondary:hover {
+  .btn-primary:hover {
     border-radius: 1rem;
-    color: #ffffff; }
-  .btn-secondary:hover::before {
+    color: #ffffff !important; }
+  .btn-primary:hover::before {
     height: 100%; }
+
+.btn-secondary {
+  text-align: center;
+  font-size: 2.5rem;
+  border: solid 1px #00000083;
+  padding: 2rem 7rem;
+  color: #252525da;
+  font-family: "Ubuntu Mono";
+  transition: color 0.3s ease-out; }
+  .btn-secondary:hover {
+    color: #8d6b51bb;
+    border-color: #8d6b51bb;
+    border-radius: 0.5rem; }
 
 .btn-tertiary {
   text-align: center;
@@ -267,11 +271,10 @@ h1 {
     text-decoration: none; }
 
 .btn__tertiary-transition {
-  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
-  display: var(--uismLinkDisplay);
+  display: inline-flex;
   color: #8d6b51e8;
   position: relative;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   overflow: hidden; }
 
 .btn__tertiary-transition::before,
@@ -284,7 +287,6 @@ h1 {
   background-color: #8d6b51cb; }
 
 .btn__tertiary-transition:hover span {
-  -webkit-transform: translateY(-400%) scale(-0.1, 0);
   transform: translateY(-400%) scale(-0.1, 0); }
 
 .btn__tertiary-transition::before {
@@ -301,4 +303,46 @@ h1 {
   -webkit-transform: translateY(0) scale(1, 1);
   transform: translateY(0) scale(1, 1); }
 
-/* ---------------------------- Secondary button ---------------------------- */
+.heading-primary {
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 4rem; }
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-family: "Ubuntu Mono"; }
+
+.shelfbgimg {
+  background-image: url("../../images/shelfmate/background.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 4rem; }
+
+.footer {
+  background-color: #000000b6;
+  color: #ebe7d9;
+  display: flex;
+  font-size: 2rem;
+  text-decoration: none;
+  height: 60vh; }
+  .footer__list {
+    margin-left: 10%;
+    margin-right: 10%; }
+  .footer__list-item {
+    list-style-type: none;
+    padding-top: 4rem; }
+  .footer__list-link {
+    padding-top: 2rem; }
+  .footer__list-link:hover {
+    text-decoration: underline 1px; }
+  .footer-content {
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    width: 14rem; }
+  .footer__left-content {
+    width: 14.5rem; }
+  .footer__right-content {
+    width: 11rem; }

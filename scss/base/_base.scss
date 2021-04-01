@@ -26,12 +26,11 @@ body {
 }
 
 a,
-h1{
+h1 {
   text-decoration: none;
   color: #f3efde;
   font-weight: normal;
 }
-
 
 *,
 *::after,
@@ -39,8 +38,8 @@ h1{
   box-sizing: inherit;
 }
 
-
-::selection { //change highlight color
+::selection {
+  //change highlight color
   background-color: #8d6b51;
   color: #f3efde;
 }

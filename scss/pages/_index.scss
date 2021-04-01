@@ -1,5 +1,5 @@
 /* ------------------------------- HeroSection ------------------------------ */
-.bgimg {
+.bgimg-hero {
   background-image: url("../../images/Hero_home__desktop_.jpg");
   width: 100%;
   height: 100vh;
@@ -7,70 +7,82 @@
   background-position: center;
   padding-top: 4rem;
 }
-.section {
+
+.hero {
   text-align: center;
   color: $primary-color;
   height: 50vh;
-  position: relative;
+  position: relative !important;
 
   &__main-heading {
+    font-size: 7rem !important;
     position: absolute;
     left: 50%;
-    top: 57%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    justify-content: center;
-    font-family: "Noto Sans JP";
-    font-size: 4rem;
   }
 
   &__sub-heading {
-    font-size: 2rem;
     position: absolute;
     left: 50%;
     top: 70%;
-    font-family: "Ubuntu Mono";
     transform: translate(-50%, -50%);
+  }
+
+  &__btn {
+    position: absolute;
+    right: 10rem;
+    bottom: -20rem;
+    z-index: 1;
   }
 }
 
-.sec-button {
-  position: absolute;
-  right: 1.5rem;
-  bottom: 10rem;
-  transform: translate(-50%, -50%);
-}
-
 /* -------------------------------- artisian -------------------------------- */
-.section-artisian {
+.artisian {
   display: flex;
   justify-content: space-between;
   border-bottom: solid #f3efde;
-}
+  height: 106vh;
 
-.artisian__heading {
-  font-size: 5rem;
-  font-family: Ubuntu Mono;
-  margin: 0;
-  padding-top: 8rem;
-  padding-left: 20rem;
-}
+  &__heading {
+    font-size: 5rem;
+    font-family: Ubuntu Mono;
+    margin: 0;
+    padding-top: 8rem;
+    padding-left: 20rem;
+  }
 
-.artisian__subheading {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding-top: 0.5rem;
-  padding-left: 20rem;
-  width: 3rem;
-}
+  &__subheading {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 20rem;
+    width: 3rem;
+  }
 
-.artisian__content {
-  font-size: 2.5rem;
-  margin-top: 0;
-  padding-top: 2rem;
-  padding-left: 20rem;
-  width: 49rem;
-  margin-bottom: 9rem;
+  &__para {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-left: 20rem;
+    width: 49rem;
+    margin-bottom: 9rem;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__btn {
+    color: #000 !important;
+    border-color: #b6b6b693 !important;
+
+    &:hover {
+      transition: all 0.3s;
+      border-color: #ffffff !important;
+    }
+  }
 }
 
 .btn-explore {
@@ -82,16 +94,12 @@
   width: 100%;
   height: 100vh;
 }
-.newarrival__icon-box {
-  padding: 2rem 0 5rem 0;
-  margin-top: 5rem;
-  margin-left: 20rem;
-}
 
 .img-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 5rem;
 }
 
 .newarrival {
@@ -107,6 +115,17 @@
     margin-left: 5rem;
     width: 30rem;
     height: 18rem;
+  }
+
+  &__heading {
+    margin-top: 5rem;
+    margin-left: 14rem;
+    font-size: 2.5rem;
+    color: #252525da;
+    font-family: "Ubuntu Mono";
+    font-size: 3rem;
+    border-bottom: 0.2rem solid #8d6b51bb;
+    width: 18rem;
   }
 }
 
@@ -124,7 +143,7 @@
   background-position: center;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   background-size: cover;
 }
 
@@ -157,5 +176,3 @@
   top: 56rem;
   width: 35rem;
 }
-
-/* --------------------------------- footer --------------------------------- */

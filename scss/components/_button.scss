@@ -1,28 +1,11 @@
 .btn-primary {
   text-align: center;
   font-size: 2.5rem;
-  border: solid 1px #00000083;
-  padding: 2rem 7rem;
-  color: #252525da;
-  font-family: "Ubuntu Mono";
-  transition: color 0.3s ease-out;
-
-  &:hover {
-    color: #8d6b51bb;
-    border-color: #8d6b51bb;
-    border-radius: 0.5rem;
-  }
-}
-
-.btn-secondary {
-  text-align: center;
-  font-size: 2.5rem;
   color: #f3efde;
   border: solid 2px #f3efde;
   padding: 3rem 10rem;
   font-family: "Ubuntu Mono";
   position: relative;
-  overflow: hidden;
   transition: 0.5s;
 
   &::before {
@@ -40,11 +23,27 @@
 
   &:hover {
     border-radius: 1rem;
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   &:hover::before {
     height: 100%;
+  }
+}
+
+.btn-secondary {
+  text-align: center;
+  font-size: 2.5rem;
+  border: solid 1px #00000083;
+  padding: 2rem 7rem;
+  color: #252525da;
+  font-family: "Ubuntu Mono";
+  transition: color 0.3s ease-out;
+
+  &:hover {
+    color: #8d6b51bb;
+    border-color: #8d6b51bb;
+    border-radius: 0.5rem;
   }
 }
 
@@ -62,11 +61,10 @@
 }
 
 .btn__tertiary-transition {
-  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
-  display: var(--uismLinkDisplay);
+  display: inline-flex;
   color: #8d6b51e8;
   position: relative;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   overflow: hidden;
 }
 
@@ -82,7 +80,6 @@
 }
 
 .btn__tertiary-transition:hover span {
-  -webkit-transform: translateY(-400%) scale(-0.1, 0);
   transform: translateY(-400%) scale(-0.1, 0);
 }
 
