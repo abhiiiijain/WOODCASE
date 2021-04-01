@@ -1,45 +1,60 @@
-
 /* --------------------------------- NavBar --------------------------------- */
 
 .nav {
   background-color: rgba(226, 206, 187, 0.096);
   height: 9rem;
   display: flex;
+  align-items: center;
 
   &__logo {
     margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   &__logo-heading {
-    padding-left: 10rem;
     height: 7.3rem;
-    width: 20rem;
+    width: 25rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
     color: #f3efde;
-    font-weight: bold;
+    font-weight: 600;
+    margin-left: 12rem;
+    transition: color 0.3s ease-out;
+
+    // &:hover {
+    //   font-weight: 900;
+    //   color: #8d6b51;
+    // }
   }
 
   &__list {
-    width: 150rem;
+    width: 125rem;
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: center;
     margin-left: 6rem;
-  }
 
-  &__list-items {
-    margin: 3rem;
-    align-items: center;
-  }
+    &-items {
+      margin: 3rem;
+      align-items: center;
+    }
 
-  &__list-link {
-    margin: 3rem;
-    align-items: center;
-    font-size: 2rem;
+    &-link {
+      margin: 3rem;
+      align-items: center;
+      font-size: 2rem;
+      border: 2px solid transparent;
+      padding: 0.3rem;
+      transition: border-color 0.3s ease-out;
+
+      &:hover {
+        border-color: #8d6b51cb;
+        color: #f3efde;
+      }
+    }
   }
 
   &__icons-list {
@@ -59,5 +74,3 @@
     width: 3.5rem;
   }
 }
-
-

@@ -1,9 +1,10 @@
 /* ------------------------------- HeroSection ------------------------------ */
 .bgimg {
-  background-image: url("../../images/mainpageimage.png");
+  background-image: url("../../images/Hero_home__desktop_.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
+  background-position: center;
   padding-top: 4rem;
 }
 .section {
@@ -32,7 +33,7 @@
   }
 }
 
-.div-Explore-button {
+.sec-button {
   position: absolute;
   right: 1.5rem;
   bottom: 10rem;
@@ -43,6 +44,7 @@
 .section-artisian {
   display: flex;
   justify-content: space-between;
+  border-bottom: solid #f3efde;
 }
 
 .artisian__heading {
@@ -76,7 +78,10 @@
 }
 
 /* ------------------------------ new arrivals ----------------------------- */
-
+.section-newarrival {
+  width: 100%;
+  height: 100vh;
+}
 .newarrival__icon-box {
   padding: 2rem 0 5rem 0;
   margin-top: 5rem;
@@ -108,13 +113,49 @@
 .btn-arrival {
   margin: 2rem 0 1rem 5rem;
   padding: 2rem 5rem;
+  margin-bottom: 5rem;
 }
 
+/* ---------------------------- shelfmate section --------------------------- */
+
 .section-shelfmate {
-  background-image: url("../../images/Collactables/background.png");
+  background-image: url(/images/shelfmate/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
   width: 100%;
   height: 100vh;
   background-size: cover;
-
 }
 
+.shelfmate-button {
+  position: absolute;
+  left: 20rem;
+  top: 10rem;
+  z-index: 2;
+}
+
+.scribble-left {
+  justify-content: left;
+  position: absolute;
+  left: 100rem;
+  top: 60rem;
+  width: 35rem;
+}
+
+.heading__shelfmate {
+  font-family: "Nato Sans JP";
+  font-size: 12rem;
+  position: absolute;
+  left: 110rem;
+  top: 55rem;
+}
+.scribble-right {
+  justify-content: right;
+  position: absolute;
+  left: 154rem;
+  top: 56rem;
+  width: 35rem;
+}
+
+/* --------------------------------- footer --------------------------------- */
