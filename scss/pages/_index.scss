@@ -39,14 +39,14 @@
   &__sub-heading {
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 73%;
     transform: translate(-50%, -50%);
 
     @media screen and (max-width: 400px) {
       width: 80%;
       position: absolute;
       left: 50%;
-      top: 62%;
+      top: 70%;
     }
   }
 

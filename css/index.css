@@ -134,14 +134,14 @@ h1 {
   .hero__sub-heading {
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 73%;
     transform: translate(-50%, -50%); }
     @media screen and (max-width: 400px) {
       .hero__sub-heading {
         width: 80%;
         position: absolute;
         left: 50%;
-        top: 62%; } }
+        top: 70%; } }
   .hero__btn {
     position: absolute;
     right: 10rem;
@@ -534,7 +534,7 @@ h1 {
       height: 50vh; } }
   @media screen and (max-width: 800px) {
     .footer {
-      height: 42vh; } }
+      height: 55vh; } }
   .footer__list {
     margin-left: 10%;
     margin-right: 10%; }
