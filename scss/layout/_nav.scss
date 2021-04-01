@@ -20,13 +20,11 @@
     font-size: 2.5rem;
     color: #f3efde;
     font-weight: 600;
-    margin-left: 12rem;
-    transition: color 0.3s ease-out;
+    margin-left: 5rem;
 
-    // &:hover {
-    //   font-weight: 900;
-    //   color: #8d6b51;
-    // }
+    @media screen and (max-width: 1712px) {
+      margin-left: 5rem;
+    }
   }
 
   &__list {
@@ -37,13 +35,16 @@
     justify-content: center;
     margin-left: 6rem;
 
+    @media screen and (max-width: 1712px) {
+      margin-left: 0rem;
+    }
+
     &-items {
       margin: 3rem;
       align-items: center;
     }
 
     &-link {
-      margin: 3rem;
       align-items: center;
       font-size: 2rem;
       border: 2px solid transparent;
@@ -62,11 +63,15 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    padding-left: 5rem;
+
+    @media screen and (max-width: 1712px) {
+      padding-left: 0rem;
+    }
   }
 
   &__icons-list-item {
     margin: 2rem;
+    list-style-type: none;
   }
 
   &__icons {

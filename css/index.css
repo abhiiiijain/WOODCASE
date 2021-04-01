@@ -3,6 +3,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media screen and (max-width: 1400px) {
+    html {
+      font-size: 50%; } }
 
 body {
   background: #fdfdfd;
@@ -43,8 +46,10 @@ h1 {
     font-size: 2.5rem;
     color: #f3efde;
     font-weight: 600;
-    margin-left: 12rem;
-    transition: color 0.3s ease-out; }
+    margin-left: 5rem; }
+    @media screen and (max-width: 1712px) {
+      .nav__logo-heading {
+        margin-left: 5rem; } }
   .nav__list {
     width: 125rem;
     display: flex;
@@ -52,11 +57,13 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-left: 6rem; }
+    @media screen and (max-width: 1712px) {
+      .nav__list {
+        margin-left: 0rem; } }
     .nav__list-items {
       margin: 3rem;
       align-items: center; }
     .nav__list-link {
-      margin: 3rem;
       align-items: center;
       font-size: 2rem;
       border: 2px solid transparent;
@@ -69,10 +76,13 @@ h1 {
     width: 30rem;
     justify-content: center;
     align-items: center;
-    display: flex;
-    padding-left: 5rem; }
+    display: flex; }
+    @media screen and (max-width: 1712px) {
+      .nav__icons-list {
+        padding-left: 0rem; } }
   .nav__icons-list-item {
-    margin: 2rem; }
+    margin: 2rem;
+    list-style-type: none; }
   .nav__icons {
     height: 3.8rem;
     width: 3.5rem; }
@@ -96,7 +106,8 @@ h1 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    padding-bottom: 5rem; }
   .hero__sub-heading {
     position: absolute;
     left: 50%;
@@ -114,12 +125,21 @@ h1 {
   justify-content: space-between;
   border-bottom: solid #f3efde;
   height: 106vh; }
+  @media screen and (max-width: 1500px) {
+    .artisian {
+      height: 100vh; } }
+  @media screen and (max-width: 1200px) {
+    .artisian {
+      height: 80vh; } }
   .artisian__heading {
     font-size: 5rem;
     font-family: Ubuntu Mono;
     margin: 0;
     padding-top: 8rem;
     padding-left: 20rem; }
+    @media screen and (max-width: 1200px) {
+      .artisian__heading {
+        padding-left: 15rem; } }
   .artisian__subheading {
     font-size: 2rem;
     margin-top: 0;
@@ -127,6 +147,9 @@ h1 {
     padding-top: 0.5rem;
     padding-left: 20rem;
     width: 3rem; }
+    @media screen and (max-width: 1200px) {
+      .artisian__subheading {
+        padding-left: 15rem; } }
   .artisian__para {
     font-size: 2.5rem;
     margin-top: 0;
@@ -134,6 +157,12 @@ h1 {
     padding-left: 20rem;
     width: 49rem;
     margin-bottom: 9rem; }
+    @media screen and (max-width: 1500px) {
+      .artisian__para {
+        font-size: 2rem; } }
+    @media screen and (max-width: 1200px) {
+      .artisian__para {
+        padding-left: 15rem; } }
   .artisian__img {
     height: 100%; }
   .artisian__btn {
@@ -145,11 +174,17 @@ h1 {
 
 .btn-explore {
   margin-left: 20rem; }
+  @media screen and (max-width: 1200px) {
+    .btn-explore {
+      margin-left: 15rem; } }
 
 /* ------------------------------ new arrivals ----------------------------- */
 .section-newarrival {
   width: 100%;
   height: 100vh; }
+  @media screen and (max-width: 1500px) {
+    .section-newarrival {
+      height: 160vh; } }
 
 .img-container {
   display: flex;
@@ -198,7 +233,16 @@ h1 {
   position: absolute;
   left: 20rem;
   top: 10rem;
-  z-index: 2; }
+  z-index: 1; }
+  @media screen and (max-width: 1114px) {
+    .shelfmate-button {
+      top: 75rem;
+      left: 45rem; } }
+
+@media screen and (max-width: 1114px) {
+  .shelfmate__btn {
+    font-size: 4rem !important;
+    padding: 5rem 15rem !important; } }
 
 .scribble-left {
   justify-content: left;
@@ -206,6 +250,18 @@ h1 {
   left: 100rem;
   top: 60rem;
   width: 35rem; }
+  @media screen and (max-width: 1880px) {
+    .scribble-left {
+      top: 54rem;
+      left: 80rem; } }
+  @media screen and (max-width: 1712px) {
+    .scribble-left {
+      top: 50rem;
+      left: 52rem; } }
+  @media screen and (max-width: 1114px) {
+    .scribble-left {
+      top: 5rem;
+      left: 23rem; } }
 
 .heading__shelfmate {
   font-family: "Nato Sans JP";
@@ -213,6 +269,18 @@ h1 {
   position: absolute;
   left: 110rem;
   top: 55rem; }
+  @media screen and (max-width: 1880px) {
+    .heading__shelfmate {
+      top: 50rem;
+      left: 90rem; } }
+  @media screen and (max-width: 1712px) {
+    .heading__shelfmate {
+      top: 46rem;
+      left: 60rem; } }
+  @media screen and (max-width: 1114px) {
+    .heading__shelfmate {
+      top: 0rem;
+      left: 30rem; } }
 
 .scribble-right {
   justify-content: right;
@@ -220,6 +288,18 @@ h1 {
   left: 154rem;
   top: 56rem;
   width: 35rem; }
+  @media screen and (max-width: 1880px) {
+    .scribble-right {
+      top: 50rem;
+      left: 134rem; } }
+  @media screen and (max-width: 1712px) {
+    .scribble-right {
+      top: 46rem;
+      left: 104rem; } }
+  @media screen and (max-width: 1114px) {
+    .scribble-right {
+      top: 0rem;
+      left: 74rem; } }
 
 .btn-primary {
   text-align: center;
@@ -325,7 +405,13 @@ h1 {
   display: flex;
   font-size: 2rem;
   text-decoration: none;
-  height: 60vh; }
+  height: 80vh; }
+  @media screen and (max-width: 1712px) {
+    .footer {
+      height: 100vh; } }
+  @media screen and (max-width: 1400px) {
+    .footer {
+      height: 75vh; } }
   .footer__list {
     margin-left: 10%;
     margin-right: 10%; }
@@ -338,7 +424,7 @@ h1 {
     text-decoration: underline 1px; }
   .footer-content {
     margin-top: 5rem;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     font-size: 4rem;
     border-bottom: 1px solid;
     width: 14rem; }

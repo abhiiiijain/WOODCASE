@@ -4,7 +4,17 @@
   display: flex;
   font-size: 2rem;
   text-decoration: none;
-  height: 60vh;
+  height: 80vh;
+
+  @media screen and (max-width: 1712px) {
+    height: 100vh;
+  }
+
+  @media screen and (max-width: 1400px) {
+    height: 75vh;
+  }
+
+  
 
   &__list {
     margin-left: 10%;
@@ -14,19 +24,18 @@
   &__list-item {
     list-style-type: none;
     padding-top: 4rem;
-    
-}
-&__list-link {
+  }
+  &__list-link {
     padding-top: 2rem;
-}
+  }
 
-&__list-link:hover {
+  &__list-link:hover {
     text-decoration: underline 1px;
-}
+  }
 
-&-content {
+  &-content {
     margin-top: 5rem;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     font-size: 4rem;
     border-bottom: 1px solid;
     width: 14rem;
