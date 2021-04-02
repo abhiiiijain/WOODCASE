@@ -8,11 +8,11 @@
   // overflow: hidden;
 
   @media screen and (max-width: 1024px) {
-    height: 50vh;
+    height: 60vh;
   }
 
   @media screen and (max-width: 800px) {
-    height: 55vh;
+    height: 50vh;
   }
 
   &__list {
@@ -28,8 +28,8 @@
   &__list-item {
     list-style-type: none;
     padding-top: 4rem;
-    @media screen and (max-width: 1025px) {
-      padding-bottom: 15rem;
+    @media screen and (max-width: 1024px) {
+      padding-bottom: 5rem;
     }
 
     @media screen and (max-width: 800px) {

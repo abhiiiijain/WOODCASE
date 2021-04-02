@@ -344,49 +344,39 @@ h1 {
       transform: rotate(-135deg);
       top: 0rem; }
 
-/* ------------------------------- HeroSection ------------------------------ */
-.bgimg-hero {
-  background-image: url("../../images/main_pages/Hero_home__desktop_.jpg");
+.bgimg {
+  background-image: url("../../images/main_pages/collection_page.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  filter: brightness(80%); }
   @media screen and (max-width: 800px) {
-    .bgimg-hero {
-      background-image: url(../../images/main_pages/home-mobile-desktop.jpg); } }
+    .bgimg {
+      background-image: url("../../images/main_pages/collection_page_mobile.jpg"); } }
 
+/* ---------------------------------- Text ---------------------------------- */
 .hero {
   text-align: center;
   color: #f3efde;
   height: 50vh;
   position: relative !important; }
   .hero__main-heading {
-    font-size: 7rem !important;
+    font-size: 10rem !important;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding-bottom: 5rem; }
+    padding-bottom: 5rem;
+    z-index: 2; }
     @media screen and (max-width: 400px) {
       .hero__main-heading {
         font-size: 8rem !important;
-        width: 90%;
         position: absolute;
         left: 50%;
         top: 50%;
         color: #ffffff; } }
-  .hero__sub-heading {
-    position: absolute;
-    left: 50%;
-    top: 73%;
-    transform: translate(-50%, -50%); }
-    @media screen and (max-width: 400px) {
-      .hero__sub-heading {
-        width: 80%;
-        position: absolute;
-        left: 50%;
-        top: 70%; } }
   .hero__btn {
     position: absolute;
     right: 10rem;
@@ -398,265 +388,37 @@ h1 {
         left: 10rem;
         top: 100rem; } }
 
-/* -------------------------------- artisian -------------------------------- */
-.artisian {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: solid #f3efde;
-  height: 106vh;
-  overflow: hidden; }
-  @media screen and (max-width: 1500px) {
-    .artisian {
-      height: 100vh; } }
-  @media screen and (max-width: 1200px) {
-    .artisian {
-      height: 80vh; } }
-  @media screen and (max-width: 1024px) {
-    .artisian {
-      display: block;
-      position: relative;
-      color: #ffffff;
-      height: 110vh; } }
-  @media screen and (max-width: 400px) {
-    .artisian {
-      padding-top: 7rem; } }
-  .artisian__heading {
-    font-size: 5rem;
-    font-family: Ubuntu Mono;
-    margin: 0;
-    padding-top: 8rem;
-    padding-left: 20rem; }
-    @media screen and (max-width: 1200px) {
-      .artisian__heading {
-        padding-left: 15rem; } }
-    @media screen and (max-width: 1024px) {
-      .artisian__heading {
-        font-size: 7rem; } }
-    @media screen and (max-width: 400px) {
-      .artisian__heading {
-        font-size: 8rem; } }
-  .artisian__subheading {
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding-top: 0.5rem;
-    padding-left: 20rem;
-    width: 3rem; }
-    @media screen and (max-width: 1200px) {
-      .artisian__subheading {
-        padding-left: 15rem; } }
-    @media screen and (max-width: 1024px) {
-      .artisian__subheading {
-        font-size: 3rem; } }
-    @media screen and (max-width: 400px) {
-      .artisian__subheading {
-        font-size: 3rem; } }
-  .artisian__para {
-    font-size: 2.5rem;
-    margin-top: 0;
-    padding-top: 2rem;
-    padding-left: 20rem;
-    width: 49rem;
-    margin-bottom: 9rem; }
-    @media screen and (max-width: 1500px) {
-      .artisian__para {
-        font-size: 2rem; } }
-    @media screen and (max-width: 1200px) {
-      .artisian__para {
-        padding-left: 15rem; } }
-    @media screen and (max-width: 1024px) {
-      .artisian__para {
-        padding-top: 5rem;
-        font-size: 4rem;
-        width: 72rem;
-        margin-bottom: 10rem; } }
-  .artisian__img {
-    height: 100%; }
-    @media screen and (max-width: 1024px) {
-      .artisian__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        opacity: 0.98;
-        width: 100%;
-        filter: brightness(70%); } }
-  .artisian__btn {
-    color: #000 !important;
-    border-color: #b6b6b693 !important; }
-    @media screen and (max-width: 1024px) {
-      .artisian__btn {
-        color: #ffffff !important; } }
-    .artisian__btn:hover {
-      transition: all 0.3s;
-      border-color: #ffffff !important; }
-
-.btn-explore {
-  margin-left: 20rem; }
-  @media screen and (max-width: 1200px) {
-    .btn-explore {
-      margin-left: 15rem; } }
-
-/* ------------------------------ new arrivals ----------------------------- */
-.img-container {
-  display: flex;
-  flex-wrap: wrap;
+.scribble-center {
+  left: 51%;
+  top: 54%;
+  transform: translate(-50%, -50%);
   justify-content: center;
-  margin-top: 5rem; }
-
-.newarrival {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  justify-content: center; }
-  @media screen and (max-width: 1024px) {
-    .newarrival {
-      margin-left: 2rem;
-      margin-right: 2rem; } }
-  @media screen and (max-width: 400px) {
-    .newarrival {
-      margin-left: 2rem;
-      margin-right: 2rem; } }
-  .newarrival__horizontal {
-    margin-top: 5rem;
-    margin-left: 5rem;
-    width: 30rem;
-    height: 18rem; }
-  .newarrival__heading {
-    margin-top: 5rem;
-    margin-left: 14rem;
-    font-size: 2.5rem;
-    color: #252525da;
-    font-family: "Ubuntu Mono";
-    font-size: 3rem;
-    border-bottom: 0.2rem solid #8d6b51bb;
-    width: 18rem; }
-    @media screen and (max-width: 1024px) {
-      .newarrival__heading {
-        font-size: 10rem;
-        margin-left: 4rem; } }
-    @media screen and (max-width: 400px) {
-      .newarrival__heading {
-        font-size: 8rem;
-        margin-left: 4rem; } }
-
-.btn-arrival {
-  margin: 2rem 0 1rem 5rem;
-  padding: 2rem 5rem;
-  margin-bottom: 5rem; }
-
-/* ---------------------------- caterpillar section --------------------------- */
-.section-caterpillar {
-  background-image: url(/images/caterpillar/background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  width: 100%;
-  height: 105vh;
-  background-size: cover;
-  overflow: hidden; }
-
-.caterpillar-button {
-  position: absolute;
-  left: 20rem;
-  top: 10rem;
-  z-index: 1; }
-  @media screen and (max-width: 1200px) {
-    .caterpillar-button {
-      top: 75rem;
-      left: 35rem; } }
-  @media screen and (max-width: 400px) {
-    .caterpillar-button {
-      top: 100rem;
-      left: 20rem; } }
-
-@media screen and (max-width: 1200px) {
-  .caterpillar__btn {
-    font-size: 4rem !important;
-    padding: 5rem 15rem !important; } }
-
-.scribble-left {
-  justify-content: left;
-  position: absolute;
-  left: 90rem;
-  top: 60rem;
-  width: 35rem; }
+  position: absolute; }
   @media screen and (max-width: 1880px) {
-    .scribble-left {
-      top: 54rem;
-      left: 72rem; } }
+    .scribble-center {
+      top: 58%;
+      width: 50%; } }
   @media screen and (max-width: 1712px) {
-    .scribble-left {
-      top: 50rem;
-      left: 42rem; } }
+    .scribble-center {
+      top: 60%;
+      width: 50%; } }
   @media screen and (max-width: 1400px) {
-    .scribble-left {
-      top: 55rem;
-      left: 53rem; } }
+    .scribble-center {
+      width: 50%; } }
   @media screen and (max-width: 1200px) {
-    .scribble-left {
-      top: 5rem;
-      left: 12rem; } }
+    .scribble-center {
+      width: 50%; } }
+  @media screen and (max-width: 800px) {
+    .scribble-center {
+      top: 52%;
+      width: 100%; } }
+  @media screen and (max-width: 610px) {
+    .scribble-center {
+      top: 58%;
+      width: 100%; } }
   @media screen and (max-width: 400px) {
-    .scribble-left {
-      top: 13rem;
-      left: 0rem;
-      width: 20rem; } }
+    .scribble-center {
+      top: 54%;
+      width: 100%; } }
 
-.heading__caterpillar {
-  font-family: "Nato Sans JP";
-  font-size: 12rem;
-  position: absolute;
-  left: 100rem;
-  top: 55rem; }
-  @media screen and (max-width: 1880px) {
-    .heading__caterpillar {
-      top: 50rem;
-      left: 80rem; } }
-  @media screen and (max-width: 1712px) {
-    .heading__caterpillar {
-      top: 46rem;
-      left: 50rem; } }
-  @media screen and (max-width: 1400px) {
-    .heading__caterpillar {
-      top: 50rem;
-      left: 61rem; } }
-  @media screen and (max-width: 1200px) {
-    .heading__caterpillar {
-      top: 0rem;
-      left: 20rem; } }
-  @media screen and (max-width: 400px) {
-    .heading__caterpillar {
-      top: 7rem;
-      left: 5rem;
-      font-size: 10rem; } }
-
-.scribble-right {
-  justify-content: right;
-  position: absolute;
-  left: 150rem;
-  top: 56rem;
-  width: 35rem; }
-  @media screen and (max-width: 1880px) {
-    .scribble-right {
-      top: 50rem;
-      left: 130rem; } }
-  @media screen and (max-width: 1712px) {
-    .scribble-right {
-      top: 46rem;
-      left: 100rem; } }
-  @media screen and (max-width: 1400px) {
-    .scribble-right {
-      top: 50rem;
-      left: 110rem; } }
-  @media screen and (max-width: 1200px) {
-    .scribble-right {
-      top: 0rem;
-      left: 69rem; } }
-  @media screen and (max-width: 400px) {
-    .scribble-right {
-      top: 15rem;
-      left: 52rem;
-      width: 20rem; } }
+/* ----------------------------- Collection page ---------------------------- */

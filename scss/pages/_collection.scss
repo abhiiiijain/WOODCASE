@@ -1,0 +1,96 @@
+.bgimg {
+  background-image: url("../../images/main_pages/collection_page.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding-top: 4rem;
+  filter: brightness(80%);
+
+  @media screen and (max-width: 800px) {
+    background-image: url("../../images/main_pages/collection_page_mobile.jpg");
+  }
+}
+
+/* ---------------------------------- Text ---------------------------------- */
+
+.hero {
+  text-align: center;
+  color: $primary-color;
+  height: 50vh;
+  position: relative !important;
+
+  &__main-heading {
+    font-size: 10rem !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 5rem;
+    z-index: 2;
+
+    @media screen and (max-width: 400px) {
+      font-size: 8rem !important;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: #ffffff;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 10rem;
+    bottom: -20rem;
+    z-index: 1;
+
+    @media screen and (max-width: 400px) {
+      position: absolute;
+      left: 10rem;
+      top: 100rem;
+    }
+  }
+}
+.scribble-center {
+  left: 51%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  position: absolute;
+
+  @media screen and (max-width: 1880px) {
+    top: 58%;
+    width: 50%;
+  }
+
+  @media screen and (max-width: 1712px) {
+    top: 60%;
+    width: 50%;
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 800px) {
+    top: 52%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 610px) {
+    top: 58%;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 400px) {
+    top: 54%;
+    width: 100%;
+  }
+}
+
+/* ----------------------------- Collection page ---------------------------- */
+

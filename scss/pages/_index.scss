@@ -1,6 +1,6 @@
 /* ------------------------------- HeroSection ------------------------------ */
 .bgimg-hero {
-  background-image: url("../../images/Hero_home__desktop_.jpg");
+  background-image: url("../../images/main_pages/Hero_home__desktop_.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -8,7 +8,7 @@
   padding-top: 4rem;
 
   @media screen and (max-width: 800px) {
-    background-image: url(../../images/home-mobile-desktop.jpg);
+    background-image: url(../../images/main_pages/home-mobile-desktop.jpg);
   }
 }
 
@@ -84,6 +84,7 @@
     display: block;
     position: relative;
     color: #ffffff;
+    height: 110vh;
   }
 
   @media screen and (max-width: 400px) {
@@ -254,10 +255,10 @@
   margin-bottom: 5rem;
 }
 
-/* ---------------------------- shelfmate section --------------------------- */
+/* ---------------------------- caterpillar section --------------------------- */
 
-.section-shelfmate {
-  background-image: url(/images/shelfmate/background.png);
+.section-caterpillar {
+  background-image: url(/images/caterpillar/background.png);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -267,7 +268,7 @@
   overflow: hidden;
 }
 
-.shelfmate-button {
+.caterpillar-button {
   position: absolute;
   left: 20rem;
   top: 10rem;
@@ -275,7 +276,7 @@
 
   @media screen and (max-width: 1200px) {
     top: 75rem;
-    left: 45rem;
+    left: 35rem;
   }
 
   @media screen and (max-width: 400px) {
@@ -284,7 +285,7 @@
   }
 }
 
-.shelfmate__btn {
+.caterpillar__btn {
   @media screen and (max-width: 1200px) {
     font-size: 4rem !important;
     padding: 5rem 15rem !important;
@@ -294,28 +295,28 @@
 .scribble-left {
   justify-content: left;
   position: absolute;
-  left: 100rem;
+  left: 90rem;
   top: 60rem;
   width: 35rem;
 
   @media screen and (max-width: 1880px) {
     top: 54rem;
-    left: 80rem;
+    left: 72rem;
   }
 
   @media screen and (max-width: 1712px) {
     top: 50rem;
-    left: 52rem;
+    left: 42rem;
   }
 
   @media screen and (max-width: 1400px) {
     top: 55rem;
-    left: 63rem;
+    left: 53rem;
   }
 
   @media screen and (max-width: 1200px) {
     top: 5rem;
-    left: 23rem;
+    left: 12rem;
   }
 
   @media screen and (max-width: 400px) {
@@ -325,31 +326,31 @@
   }
 }
 
-.heading__shelfmate {
+.heading__caterpillar {
   font-family: "Nato Sans JP";
   font-size: 12rem;
   position: absolute;
-  left: 110rem;
+  left: 100rem;
   top: 55rem;
 
   @media screen and (max-width: 1880px) {
     top: 50rem;
-    left: 90rem;
+    left: 80rem;
   }
 
   @media screen and (max-width: 1712px) {
     top: 46rem;
-    left: 60rem;
+    left: 50rem;
   }
 
   @media screen and (max-width: 1400px) {
     top: 50rem;
-    left: 71rem;
+    left: 61rem;
   }
 
   @media screen and (max-width: 1200px) {
     top: 0rem;
-    left: 30rem;
+    left: 20rem;
   }
 
   @media screen and (max-width: 400px) {
@@ -362,28 +363,28 @@
 .scribble-right {
   justify-content: right;
   position: absolute;
-  left: 154rem;
+  left: 150rem;
   top: 56rem;
   width: 35rem;
 
   @media screen and (max-width: 1880px) {
     top: 50rem;
-    left: 134rem;
+    left: 130rem;
   }
 
   @media screen and (max-width: 1712px) {
     top: 46rem;
-    left: 104rem;
+    left: 100rem;
   }
 
   @media screen and (max-width: 1400px) {
     top: 50rem;
-    left: 115rem;
+    left: 110rem;
   }
 
   @media screen and (max-width: 1200px) {
     top: 0rem;
-    left: 74rem;
+    left: 69rem;
   }
 
   @media screen and (max-width: 400px) {
