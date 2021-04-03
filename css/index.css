@@ -441,7 +441,8 @@ h1 {
     margin-bottom: 1rem;
     padding-top: 0.5rem;
     padding-left: 20rem;
-    width: 3rem; }
+    width: 3rem;
+    text-decoration: underline 2px; }
     @media screen and (max-width: 1200px) {
       .artisian__subheading {
         padding-left: 15rem; } }
@@ -606,7 +607,7 @@ h1 {
       width: 20rem; } }
 
 .heading__caterpillar {
-  font-family: "Nato Sans JP";
+  font-family: "Ubuntu Mono";
   font-size: 12rem;
   position: absolute;
   left: 100rem;
@@ -636,7 +637,7 @@ h1 {
 .scribble-right {
   justify-content: right;
   position: absolute;
-  left: 150rem;
+  left: 135rem;
   top: 56rem;
   width: 35rem; }
   @media screen and (max-width: 1880px) {
