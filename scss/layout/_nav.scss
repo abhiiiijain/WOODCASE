@@ -52,14 +52,7 @@
     &-link {
       align-items: center;
       font-size: 2rem;
-      border: 2px solid transparent;
       padding: 0.3rem;
-      transition: border-color 0.3s ease-out;
-
-      &:hover {
-        border-color: #8d6b51cb;
-        color: #f3efde;
-      }
     }
   }
 
@@ -85,4 +78,40 @@
   }
 }
 
-/* ---------------------------- HAMBURGER NAVBAR ---------------------------- */
+/* ---------------------------- Animation of NAVBAR ---------------------------- */
+
+$animate: all 0.2s ease-in-out;
+
+.hover {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: $animate;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0px;
+    height: 2px;
+    margin: 1px 0 0;
+    transition: $animate;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: #f3efde;
+  }
+  &.hover-1 {
+    &:before {
+      left: 0;
+    }
+  }
+}
+.example:hover {
+  cursor: pointer;
+  .hover {
+    &:before {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
