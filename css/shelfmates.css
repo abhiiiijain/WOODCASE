@@ -563,14 +563,14 @@ h1 {
     right: 0; }
 
 .container:hover .overlay {
-  opacity: 1; }
+  opacity: 5; }
 
 .text {
   overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-45%, -45%); }
 
 .transition_img {
   height: 45rem;
