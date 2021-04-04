@@ -67,7 +67,8 @@ h1 {
     list-style: none;
     align-items: center;
     justify-content: center;
-    margin-left: 6rem; }
+    margin-left: 6rem;
+    padding-left: 0rem; }
     @media screen and (max-width: 1712px) {
       .nav__list {
         margin-left: 0rem; } }
