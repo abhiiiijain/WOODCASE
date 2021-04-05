@@ -367,7 +367,7 @@ h1 {
       top: 0rem; }
 
 .bgimg {
-  background-image: url("../../images/shelfmates/shelfmates_bg.png");
+  background-image: url("../../images/shelfmate/shelfmate_bg.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -563,14 +563,14 @@ h1 {
     right: 0; }
 
 .container:hover .overlay {
-  opacity: 5; }
+  opacity: 1; }
 
 .text {
   overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-45%, -45%); }
+  transform: translate(-50%, -50%); }
 
 .transition_img {
   height: 45rem;
