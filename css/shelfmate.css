@@ -372,6 +372,9 @@ h1 {
   background-position: center;
   position: relative;
   height: 100vh; }
+  @media screen and (max-width: 800px) {
+    .bgimg {
+      background-image: url(../../images/main_pages/home-mobile-desktop.jpg); } }
 
 .nav {
   background-color: #2726264a; }
@@ -526,6 +529,19 @@ h1 {
         position: absolute;
         left: 15rem;
         bottom: 35rem;
+        color: #f3efde; } }
+    @media screen and (max-height: 670px) {
+      .Shelfmate__btn {
+        position: absolute;
+        left: 15rem;
+        bottom: 5rem;
+        color: #f3efde; } }
+    @media screen and (max-height: 750px) {
+      .Shelfmate__btn {
+        position: absolute;
+        left: 15rem;
+        top: 95rem;
+        bottom: 8rem;
         color: #f3efde; } }
   .Shelfmate__page-video {
     width: 60vh; }
