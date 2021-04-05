@@ -225,67 +225,54 @@ h1 {
 /* ------------------------------- HeroSection ------------------------------ */
 .bgimg-hero {
   background-image: url("../../images/caterpillar/background.png");
-  width: 100%;
-  height: 100vh;
   background-size: cover;
   background-position: center;
+  position: relative;
+  height: 100vh;
   padding-top: 4rem; }
   @media screen and (max-width: 800px) {
     .bgimg-hero {
       background-image: url(../../images/caterpillar/background_mobile.jpg); } }
 
-.hero {
-  text-align: center;
-  color: #f3efde;
-  height: 50vh;
-  position: relative !important; }
-  .hero__main-heading {
-    font-size: 7rem !important;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 10rem !important;
-    padding-bottom: 5rem;
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-    animation: glitch 500ms infinite;
-    animation: glitch 500ms infinite;
-    padding-bottom: 5rem; }
-    @media screen and (max-width: 400px) {
-      .hero__main-heading {
-        font-size: 8rem !important;
-        width: 90%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        color: #ffffff; } }
-  .hero .hero__main-heading span {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .hero__sub-heading {
-    position: absolute;
-    left: 50%;
-    top: 73%;
-    transform: translate(-50%, -50%); }
-    @media screen and (max-width: 400px) {
-      .hero__sub-heading {
-        width: 80%;
-        position: absolute;
-        left: 50%;
-        top: 70%; } }
-  .hero__btn {
-    position: absolute;
-    right: 10rem;
-    bottom: -20rem;
-    z-index: 1; }
-    @media screen and (max-width: 400px) {
-      .hero__btn {
-        position: absolute;
-        left: 10rem;
-        top: 100rem; } }
+.nav {
+  background-color: #2726264a; }
+
+.hero__main-heading {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 10rem !important;
+  padding-bottom: 5rem;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 500ms infinite;
+  animation: glitch 500ms infinite;
+  padding-bottom: 5rem; }
+
+.hero .hero__main-heading span {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.hero__scribble {
+  position: absolute;
+  top: 45%;
+  left: 26%;
+  width: 50%;
+  z-index: 0; }
+
+.hero__btn {
+  position: absolute;
+  right: 10rem;
+  bottom: 15rem;
+  z-index: 1; }
+  @media screen and (max-width: 400px) {
+    .hero__btn {
+      position: absolute;
+      left: 20rem;
+      bottom: 35rem; } }
 
 /* -------------------------------- Animation ------------------------------- */
 @keyframes glitch {
