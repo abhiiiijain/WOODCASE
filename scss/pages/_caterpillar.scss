@@ -1,3 +1,4 @@
+/* ------------------------------- HeroSection ------------------------------ */
 .bgimg-hero {
   background-image: url("../../images/caterpillar/background.png");
   width: 100%;
@@ -14,7 +15,7 @@
 .hero {
   text-align: center;
   color: $primary-color;
-  height: 100vh;
+  height: 50vh;
   position: relative !important;
 
   &__main-heading {
@@ -23,15 +24,98 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 10rem !important;
+    padding-bottom: 5rem;
+    text-shadow:
+    0.05em 0 0 rgba(255,0,0,.75),
+    -0.025em -.05em 0 rgba(0,255,0,.75),
+    0.025em .05em 0 rgba(0,0,255,.75);
+    
+    animation: glitch 500ms infinite;
+  
+    animation: glitch 500ms infinite;
     padding-bottom: 5rem;
 
     @media screen and (max-width: 400px) {
-      font-size: 10rem !important;
+      font-size: 8rem !important;
       width: 90%;
       position: absolute;
       left: 50%;
-      top: 40%;
+      top: 50%;
       color: #ffffff;
     }
+  }
+
+  .hero__main-heading span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__sub-heading {
+    position: absolute;
+    left: 50%;
+    top: 73%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 400px) {
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 70%;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 10rem;
+    bottom: -20rem;
+    z-index: 1;
+
+    @media screen and (max-width: 400px) {
+      position: absolute;
+      left: 10rem;
+      top: 100rem;
+    }
+  }
+}
+
+/* -------------------------------- Animation ------------------------------- */
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
   }
 }
