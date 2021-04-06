@@ -41,7 +41,8 @@ h1 {
   background-color: rgba(226, 206, 187, 0.096);
   height: 9rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   @media screen and (max-width: 1024px) {
     .nav {
       display: none; } }
@@ -270,7 +271,8 @@ h1 {
     width: 11rem; }
 
 .navigation {
-  display: none; }
+  display: none;
+  overflow: hidden; }
   @media screen and (max-width: 1024px) {
     .navigation {
       display: block; } }
@@ -283,7 +285,7 @@ h1 {
     border-radius: 50%;
     position: fixed;
     top: 7rem;
-    right: 4rem;
+    right: 10rem;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -294,7 +296,7 @@ h1 {
     border-radius: 50%;
     position: fixed;
     top: 7.5rem;
-    right: 4rem;
+    right: 10rem;
     background-image: radial-gradient(#8d6b519d, #7c451be1);
     z-index: 1000;
     transition: transform 0.8s; }
@@ -516,39 +518,35 @@ h1 {
     @media screen and (max-width: 1000px) {
       .artisian__btn {
         position: absolute;
-        left: 60rem;
-        bottom: 27rem; } }
+        left: 60rem; } }
     @media screen and (max-width: 500px) {
       .artisian__btn {
         position: absolute;
         left: 5rem;
-        bottom: 35rem;
         color: #f3efde; } }
     @media screen and (max-width: 400px) {
       .artisian__btn {
         position: absolute;
         left: 15rem;
-        bottom: 35rem;
-        color: #f3efde; } }
-    @media screen and (max-height: 670px) {
-      .artisian__btn {
-        position: absolute;
-        left: 15rem;
-        bottom: 5rem;
         color: #f3efde; } }
     @media screen and (max-height: 750px) {
       .artisian__btn {
         position: absolute;
         left: 15rem;
-        top: 95rem;
         bottom: 8rem;
+        color: #f3efde; } }
+    @media screen and (max-height: 670px) {
+      .artisian__btn {
+        position: absolute;
+        left: 15rem;
+        top: 120rem;
         color: #f3efde; } }
   .artisian__page-video {
     width: 100%;
-    z-index: -100; }
+    z-index: -1000; }
     @media screen and (max-width: 500px) {
       .artisian__page-video {
-        width: 350%;
+        width: 500%;
         position: absolute; } }
 
 /* ---------------------------------- items --------------------------------- */
