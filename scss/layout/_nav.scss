@@ -5,6 +5,7 @@
   height: 9rem;
   display: flex;
   align-items: center;
+  overflow: hidden;
 
   @media screen and (max-width: 1024px) {
     display: none;
@@ -21,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #f3efde;
     font-weight: 600;
     margin-left: 5rem;
@@ -51,7 +52,7 @@
 
     &-link {
       align-items: center;
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding: 0.3rem;
     }
   }

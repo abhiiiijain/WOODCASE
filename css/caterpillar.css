@@ -41,7 +41,8 @@ h1 {
   background-color: rgba(226, 206, 187, 0.096);
   height: 9rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   @media screen and (max-width: 1024px) {
     .nav {
       display: none; } }
@@ -54,7 +55,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #f3efde;
     font-weight: 600;
     margin-left: 5rem; }
@@ -77,7 +78,7 @@ h1 {
       align-items: center; }
     .nav__list-link {
       align-items: center;
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding: 0.3rem; }
   .nav__icons-list {
     width: 30rem;
@@ -222,37 +223,271 @@ h1 {
     .heading-tertiary {
       font-size: 3rem; } }
 
+/* ------------------------------- HeroSection ------------------------------ */
 .bgimg-hero {
   background-image: url("../../images/caterpillar/background.png");
-  width: 100%;
-  height: 100vh;
   background-size: cover;
   background-position: center;
+  position: relative;
+  height: 100vh;
   padding-top: 4rem; }
   @media screen and (max-width: 800px) {
     .bgimg-hero {
       background-image: url(../../images/caterpillar/background_mobile.jpg); } }
 
-.hero {
-  text-align: center;
-  color: #f3efde;
+.nav {
+  background-color: #2726264a; }
+
+.hero__main-heading {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 10rem !important;
+  padding-bottom: 5rem;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 500ms infinite;
+  animation: glitch 500ms infinite;
+  padding-bottom: 5rem; }
+
+.hero .hero__main-heading span {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.hero__scribble {
+  position: absolute;
+  top: 45%;
+  left: 26%;
+  width: 50%;
+  z-index: 0; }
+
+.hero__btn {
+  position: absolute;
+  right: 10rem;
+  bottom: 15rem;
+  z-index: 1; }
+  @media screen and (max-width: 400px) {
+    .hero__btn {
+      position: absolute;
+      left: 20rem;
+      bottom: 35rem; } }
+
+/* -------------------------------- Animation ------------------------------- */
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
+  15% {
+    text-shadow: -0.05em -0.025 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
+  49% {
+    text-shadow: -0.05em -0.025 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
+  50% {
+    text-shadow: 0.025em 0.05 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
+  99% {
+    text-shadow: 0.025em 0.05 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75); } }
+
+/* -------------------------------- Caterpillar ------------------------------- */
+.Caterpillar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #f3efde;
   height: 100vh;
-  position: relative !important; }
-  .hero__main-heading {
-    font-size: 7rem !important;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding-bottom: 5rem; }
-    @media screen and (max-width: 400px) {
-      .hero__main-heading {
-        font-size: 10rem !important;
-        width: 90%;
+  overflow: hidden;
+  padding: 5rem;
+  position: relative; }
+  @media screen and (max-width: 1500px) {
+    .Caterpillar {
+      color: #f3efde;
+      display: block;
+      margin-top: -5rem;
+      height: 82vh;
+      padding: 0rem; } }
+  @media screen and (max-width: 1000px) {
+    .Caterpillar {
+      height: 100vh;
+      padding: 0rem; } }
+  .Caterpillar__heading {
+    font-size: 5rem;
+    font-family: Ubuntu Mono;
+    margin: 0;
+    padding-top: 5rem;
+    padding-left: 20rem; }
+    @media screen and (max-width: 1500px) {
+      .Caterpillar__heading {
+        font-size: 8rem;
         position: absolute;
-        left: 50%;
-        top: 40%;
-        color: #ffffff; } }
+        top: 15rem;
+        left: 3rem; } }
+    @media screen and (max-width: 1000px) {
+      .Caterpillar__heading {
+        font-size: 7rem;
+        padding-top: 8rem;
+        padding-left: 10rem; } }
+    @media screen and (max-width: 550px) {
+      .Caterpillar__heading {
+        font-size: 5rem !important; } }
+    @media screen and (max-width: 400px) {
+      .Caterpillar__heading {
+        font-size: 8rem; } }
+  .Caterpillar__subheading {
+    text-decoration: underline 2px;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 20rem;
+    width: 49rem; }
+    @media screen and (max-width: 1500px) {
+      .Caterpillar__subheading {
+        position: absolute;
+        top: 30rem;
+        left: 3rem;
+        font-size: 3rem;
+        text-decoration: underline 1px;
+        width: 70rem; } }
+    @media screen and (max-width: 1000px) {
+      .Caterpillar__subheading {
+        font-size: 3rem;
+        top: 35rem;
+        left: -6rem;
+        text-decoration: underline 1px;
+        width: 70rem; } }
+    @media screen and (max-width: 450px) {
+      .Caterpillar__subheading {
+        font-size: 2.5rem !important; } }
+  .Caterpillar__para {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-left: 20rem;
+    width: 49rem;
+    margin-bottom: 9rem; }
+    @media screen and (max-width: 1500px) {
+      .Caterpillar__para {
+        top: 55rem;
+        left: 3rem;
+        font-size: 4rem;
+        width: 90rem;
+        position: absolute; } }
+    @media screen and (max-width: 1000px) {
+      .Caterpillar__para {
+        font-size: 4rem;
+        width: 90rem;
+        top: 55rem;
+        left: -6rem; } }
+    @media screen and (max-width: 450px) {
+      .Caterpillar__para {
+        width: 70rem;
+        font-size: 2.8rem !important; } }
+    @media screen and (max-width: 400px) {
+      .Caterpillar__para {
+        width: 70rem;
+        font-size: 3.4rem; } }
+  .Caterpillar__btn {
+    color: #2726264a;
+    left: 40%; }
+    .Caterpillar__btn:hover {
+      transition: all 0.3s;
+      border-color: #ffffff !important; }
+    @media screen and (max-width: 1500px) {
+      .Caterpillar__btn {
+        border-color: #ffffff !important;
+        color: #f3efde;
+        top: 120rem;
+        left: 75rem; } }
+    @media screen and (max-width: 1000px) {
+      .Caterpillar__btn {
+        position: absolute;
+        left: 60rem;
+        bottom: 27rem; } }
+    @media screen and (max-width: 500px) {
+      .Caterpillar__btn {
+        position: absolute;
+        left: 5rem;
+        bottom: 35rem;
+        color: #f3efde; } }
+    @media screen and (max-width: 400px) {
+      .Caterpillar__btn {
+        position: absolute;
+        left: 15rem;
+        bottom: 35rem;
+        color: #f3efde; } }
+    @media screen and (max-height: 670px) {
+      .Caterpillar__btn {
+        position: absolute;
+        left: 15rem;
+        bottom: 5rem;
+        color: #f3efde; } }
+    @media screen and (max-height: 750px) {
+      .Caterpillar__btn {
+        position: absolute;
+        left: 15rem;
+        top: 95rem;
+        bottom: 8rem;
+        color: #f3efde; } }
+  .Caterpillar__page-video {
+    width: 60vh; }
+    @media screen and (max-width: 1500px) {
+      .Caterpillar__page-video {
+        position: absolute; } }
+
+/* ---------------------------------- items --------------------------------- */
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.container {
+  position: relative;
+  height: 45rem;
+  width: 40rem;
+  display: inline-block;
+  margin: 5rem 7rem 7rem 5rem; }
+
+.bg-color {
+  background-color: #e5ddd6;
+  display: block;
+  height: 45rem;
+  width: 40rem; }
+
+.overlay {
+  position: absolute;
+  transition: all 0.5s ease;
+  opacity: 0; }
+  .overlayleft {
+    height: 100%;
+    top: 0;
+    width: 0;
+    right: 0; }
+
+.container:hover .overlay {
+  opacity: 1; }
+
+.text {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.transition_img {
+  height: 45rem;
+  width: 40rem; }
+
+.overlayleft {
+  height: 100%;
+  width: 0;
+  top: 0;
+  right: 100; }
+
+.container:hover .overlayleft {
+  width: 100%; }
 
 .footer {
   width: 100%;
@@ -302,7 +537,8 @@ h1 {
     width: 11rem; }
 
 .navigation {
-  display: none; }
+  display: none;
+  overflow: hidden; }
   @media screen and (max-width: 1024px) {
     .navigation {
       display: block; } }
@@ -315,7 +551,7 @@ h1 {
     border-radius: 50%;
     position: fixed;
     top: 7rem;
-    right: 4rem;
+    right: 10rem;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -326,7 +562,7 @@ h1 {
     border-radius: 50%;
     position: fixed;
     top: 7.5rem;
-    right: 4rem;
+    right: 10rem;
     background-image: radial-gradient(#8d6b519d, #7c451be1);
     z-index: 1000;
     transition: transform 0.8s; }
@@ -397,5 +633,3 @@ h1 {
     .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
       transform: rotate(-135deg);
       top: 0rem; }
-
-      @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
