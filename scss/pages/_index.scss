@@ -33,7 +33,7 @@
       0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
 
     animation: glitch 500ms infinite;
-  
+
     animation: glitch 500ms infinite;
 
     @media screen and (max-width: 400px) {
@@ -125,6 +125,7 @@
   border-bottom: solid #f3efde;
   height: 106vh;
   overflow: hidden;
+  position: relative;
 
   @media screen and (max-width: 1500px) {
     height: 100vh;
@@ -245,6 +246,10 @@
 
   @media screen and (max-width: 1200px) {
     margin-left: 15rem;
+  }
+  @media screen and (max-width: 400px) {
+    position: absolute;
+    left: 30%;
   }
 }
 
@@ -449,142 +454,183 @@
   }
 }
 
-
 /* ---------------------------- shelfmate section --------------------------- */
 
-.section-caterpillar {
-  background-image: url(/images/shelfmate/shelfmate_bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  width: 100%;
-  height: 105vh;
-  background-size: cover;
+.Shelfmate {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #f3efde;
+  height: 100vh;
   overflow: hidden;
+  padding: 5rem;
+  position: relative;
+
+  @media screen and (max-width: 1500px) {
+    color: #f3efde;
+    display: block;
+    margin-top: -5rem;
+    height: 82vh;
+    padding: 0rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    height: 100vh;
+    padding: 0rem;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    font-family: Ubuntu Mono;
+    margin: 0;
+    padding-top: 5rem;
+    padding-left: 20rem;
+
+    @media screen and (max-width: 1500px) {
+      font-size: 8rem;
+      position: absolute;
+      top: 15rem;
+      left: 3rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+      font-size: 7rem;
+      padding-top: 8rem;
+      padding-left: 10rem;
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 5rem !important;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 8rem;
+    }
+  }
+
+  &__subheading {
+    text-decoration: underline 2px;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 20rem;
+    width: 49rem;
+
+    @media screen and (max-width: 1500px) {
+      position: absolute;
+      top: 30rem;
+      left: 3rem;
+      font-size: 3rem;
+      text-decoration: underline 1px;
+      width: 70rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+      font-size: 3rem;
+      top: 35rem;
+      left: -6rem;
+      text-decoration: underline 1px;
+      width: 70rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  &__para {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding-top: 2rem;
+    padding-left: 20rem;
+    width: 49rem;
+    margin-bottom: 9rem;
+
+    @media screen and (max-width: 1500px) {
+      top: 55rem;
+      left: 3rem;
+      font-size: 4rem;
+      width: 90rem;
+      position: absolute;
+    }
+
+    @media screen and (max-width: 1000px) {
+      font-size: 4rem;
+      width: 90rem;
+      top: 55rem;
+      left: -6rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 70rem;
+      font-size: 2.8rem !important;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 70rem;
+      font-size: 3.4rem;
+    }
+  }
+
+  &__btn {
+    color: #2726264a;
+    left: 40%;
+
+    &:hover {
+      transition: all 0.3s;
+      border-color: #ffffff !important;
+    }
+
+    @media screen and (max-width: 1500px) {
+      border-color: #ffffff !important;
+      color: #f3efde;
+      top: 120rem;
+      left: 30%;
+    }
+
+    @media screen and (max-width: 1000px) {
+      position: absolute;
+      // bottom: 27rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      position: absolute;
+      // bottom: 35rem;
+      color: #f3efde;
+    }
+
+    @media screen and (max-width: 400px) {
+      position: absolute;
+
+      // bottom: 35rem;
+      color: #f3efde;
+    }
+
+    @media screen and (max-height: 670px) {
+      position: absolute;
+      // bottom: 5rem;
+      color: #f3efde;
+    }
+    @media screen and (max-height: 750px) {
+      position: absolute;
+      // top: 95rem;
+      bottom: 8rem;
+      color: #f3efde;
+    }
+  }
+
+  &__page-video {
+    width: 100%;
+    overflow: hidden;
+
+    @media screen and (max-width: 1500px) {
+      position: absolute;
+    }
+    @media screen and (max-width: 200px) {
+      width: 80vh;
+    }
+  }
 }
 
-.shelfmate-button {
-  position: absolute;
-  left: 20rem;
-  top: 10rem;
-  z-index: 1;
-
-  @media screen and (max-width: 1200px) {
-    top: 75rem;
-    left: 35rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    top: 100rem;
-    left: 20rem;
-  }
-}
-
-.shelfmate__btn {
-  @media screen and (max-width: 1200px) {
-    font-size: 4rem !important;
-    padding: 5rem 15rem !important;
-  }
-}
-
-.scribble-left {
-  justify-content: left;
-  position: absolute;
-  left: 90rem;
-  top: 60rem;
-  width: 35rem;
-
-  @media screen and (max-width: 1880px) {
-    top: 54rem;
-    left: 72rem;
-  }
-
-  @media screen and (max-width: 1712px) {
-    top: 50rem;
-    left: 42rem;
-  }
-
-  @media screen and (max-width: 1400px) {
-    top: 55rem;
-    left: 53rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    top: 5rem;
-    left: 12rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    top: 13rem;
-    left: 0rem;
-    width: 20rem;
-  }
-}
-
-.heading__shelfmate {
-  font-family: "Ubuntu Mono";
-  font-size: 12rem;
-  position: absolute;
-  left: 100rem;
-  top: 55rem;
-
-  @media screen and (max-width: 1880px) {
-    top: 50rem;
-    left: 80rem;
-  }
-
-  @media screen and (max-width: 1712px) {
-    top: 46rem;
-    left: 50rem;
-  }
-
-  @media screen and (max-width: 1400px) {
-    top: 50rem;
-    left: 61rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    top: 0rem;
-    left: 20rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    top: 7rem;
-    left: 5rem;
-    font-size: 10rem;
-  }
-}
-
-.scribble-right {
-  justify-content: right;
-  position: absolute;
-  left: 135rem;
-  top: 56rem;
-  width: 35rem;
-
-  @media screen and (max-width: 1880px) {
-    top: 50rem;
-    left: 130rem;
-  }
-
-  @media screen and (max-width: 1712px) {
-    top: 46rem;
-    left: 100rem;
-  }
-
-  @media screen and (max-width: 1400px) {
-    top: 50rem;
-    left: 110rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    top: 0rem;
-    left: 69rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    top: 15rem;
-    left: 52rem;
-    width: 20rem;
-  }
+.btn-explore {
+  margin-left: 0;
 }
