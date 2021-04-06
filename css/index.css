@@ -55,7 +55,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #f3efde;
     font-weight: 600;
     margin-left: 5rem; }
@@ -78,7 +78,7 @@ h1 {
       align-items: center; }
     .nav__list-link {
       align-items: center;
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding: 0.3rem; }
   .nav__icons-list {
     width: 30rem;
@@ -393,6 +393,7 @@ h1 {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-family: sans-serif;
+    font-size: 8rem !important;
     padding-bottom: 5rem;
     text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
     animation: glitch 500ms infinite;
@@ -680,6 +681,120 @@ h1 {
       left: 20rem; } }
   @media screen and (max-width: 400px) {
     .heading__caterpillar {
+      top: 7rem;
+      left: 5rem;
+      font-size: 10rem; } }
+
+.scribble-right {
+  justify-content: right;
+  position: absolute;
+  left: 135rem;
+  top: 56rem;
+  width: 35rem; }
+  @media screen and (max-width: 1880px) {
+    .scribble-right {
+      top: 50rem;
+      left: 130rem; } }
+  @media screen and (max-width: 1712px) {
+    .scribble-right {
+      top: 46rem;
+      left: 100rem; } }
+  @media screen and (max-width: 1400px) {
+    .scribble-right {
+      top: 50rem;
+      left: 110rem; } }
+  @media screen and (max-width: 1200px) {
+    .scribble-right {
+      top: 0rem;
+      left: 69rem; } }
+  @media screen and (max-width: 400px) {
+    .scribble-right {
+      top: 15rem;
+      left: 52rem;
+      width: 20rem; } }
+
+/* ---------------------------- shelfmate section --------------------------- */
+.section-caterpillar {
+  background-image: url(/images/shelfmate/shelfmate_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 105vh;
+  background-size: cover;
+  overflow: hidden; }
+
+.shelfmate-button {
+  position: absolute;
+  left: 20rem;
+  top: 10rem;
+  z-index: 1; }
+  @media screen and (max-width: 1200px) {
+    .shelfmate-button {
+      top: 75rem;
+      left: 35rem; } }
+  @media screen and (max-width: 400px) {
+    .shelfmate-button {
+      top: 100rem;
+      left: 20rem; } }
+
+@media screen and (max-width: 1200px) {
+  .shelfmate__btn {
+    font-size: 4rem !important;
+    padding: 5rem 15rem !important; } }
+
+.scribble-left {
+  justify-content: left;
+  position: absolute;
+  left: 90rem;
+  top: 60rem;
+  width: 35rem; }
+  @media screen and (max-width: 1880px) {
+    .scribble-left {
+      top: 54rem;
+      left: 72rem; } }
+  @media screen and (max-width: 1712px) {
+    .scribble-left {
+      top: 50rem;
+      left: 42rem; } }
+  @media screen and (max-width: 1400px) {
+    .scribble-left {
+      top: 55rem;
+      left: 53rem; } }
+  @media screen and (max-width: 1200px) {
+    .scribble-left {
+      top: 5rem;
+      left: 12rem; } }
+  @media screen and (max-width: 400px) {
+    .scribble-left {
+      top: 13rem;
+      left: 0rem;
+      width: 20rem; } }
+
+.heading__shelfmate {
+  font-family: "Ubuntu Mono";
+  font-size: 12rem;
+  position: absolute;
+  left: 100rem;
+  top: 55rem; }
+  @media screen and (max-width: 1880px) {
+    .heading__shelfmate {
+      top: 50rem;
+      left: 80rem; } }
+  @media screen and (max-width: 1712px) {
+    .heading__shelfmate {
+      top: 46rem;
+      left: 50rem; } }
+  @media screen and (max-width: 1400px) {
+    .heading__shelfmate {
+      top: 50rem;
+      left: 61rem; } }
+  @media screen and (max-width: 1200px) {
+    .heading__shelfmate {
+      top: 0rem;
+      left: 20rem; } }
+  @media screen and (max-width: 400px) {
+    .heading__shelfmate {
       top: 7rem;
       left: 5rem;
       font-size: 10rem; } }

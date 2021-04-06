@@ -55,7 +55,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #f3efde;
     font-weight: 600;
     margin-left: 5rem; }
@@ -78,7 +78,7 @@ h1 {
       align-items: center; }
     .nav__list-link {
       align-items: center;
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding: 0.3rem; }
   .nav__icons-list {
     width: 30rem;
@@ -368,12 +368,14 @@ h1 {
       transform: rotate(-135deg);
       top: 0rem; }
 
+/* ------------------------------- HeroSection ------------------------------ */
 .bgimg {
   background-image: url("../../images/shelfmate/shelfmate_bg.png");
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  padding-top: 4rem; }
   @media screen and (max-width: 800px) {
     .bgimg {
       background-image: url(../../images/shelfmate/shelfmate_9.1.png); } }
@@ -386,7 +388,19 @@ h1 {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 10rem !important; }
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 10rem !important;
+  padding-bottom: 5rem;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 500ms infinite;
+  animation: glitch 500ms infinite;
+  padding-bottom: 5rem; }
+
+.hero .hero__main-heading span {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .hero__scribble {
   position: absolute;
@@ -405,6 +419,23 @@ h1 {
       position: absolute;
       left: 20rem;
       bottom: 35rem; } }
+
+/* -------------------------------- Animation ------------------------------- */
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75); }
+  15% {
+    text-shadow: -0.05em -0.025 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
+  49% {
+    text-shadow: -0.05em -0.025 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75); }
+  50% {
+    text-shadow: 0.025em 0.05 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
+  99% {
+    text-shadow: 0.025em 0.05 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75); }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75); } }
 
 /* -------------------------------- shelfmate ------------------------------- */
 .Shelfmate {
