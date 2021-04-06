@@ -370,7 +370,7 @@ h1 {
   color: black;
   font-family: "Ubuntu Mono";
   position: absolute;
-  width: 100%;
+  width: 519px;
   height: 118px;
   left: 850px;
   top: 50px;
@@ -380,13 +380,21 @@ h1 {
   line-height: 40px;
   display: flex;
   align-items: center; }
-  .heading_price {
-    width: 193px;
-    height: 66px;
-    left: 850px;
-    top: 150px;
-    font-size: 25px;
-    line-height: 25px; }
+
+.heading_price {
+  width: 193px;
+  height: 66px;
+  left: 850px;
+  top: 150px;
+  font-size: 25px;
+  line-height: 25px;
+  color: black;
+  font-family: "Ubuntu Mono";
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  align-items: center; }
 
 h3 {
   color: black;
