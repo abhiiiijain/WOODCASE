@@ -38,72 +38,23 @@
     width: 557px;
     height: 192px;
     left: 850px;
-    top: 290px;
+    top: 500px;
     font-size: 20px;
     line-height: 20px;
 
 }
 
-.img{
-    position:absolute; 
-    top:100px; 
-    left:135px; 
-    width:550px; 
-    height:475px;
-}
-  color: black;
-  font-family: "Ubuntu Mono";
-  position: absolute;
-  width: 100%;
-  height: 118px;
-  left: 850px;
-  top: 50px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 40px;
-  display: flex;
-  align-items: center;
-
-  &_price {
-    width: 193px;
-    height: 66px;
-    left: 850px;
-    top: 150px;
-
-    font-size: 25px;
-    line-height: 25px;
-  }
+&_dimension  {
+    width: 557px;
+    height: 192px;
+    left: 500px;
+    top: 290px;
+    font-size: 20px;
+    line-height: 20px;
 }
 
-h3 {
-  color: black;
-  font-family: "Ubuntu Mono";
-  position: absolute;
-  width: 170px;
-  height: 40px;
-  left: 850px;
-  top: 250px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
+.footer {
+  bottom: 0;
+  positon: fixed;
 }
 
-p {
-  color: black;
-  font-family: "Ubuntu Mono";
-  position: absolute;
-  width: 557px;
-  height: 192px;
-  left: 850px;
-  top: 290px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-}
