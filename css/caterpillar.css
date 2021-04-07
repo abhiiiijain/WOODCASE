@@ -432,10 +432,14 @@ h1 {
         bottom: 8rem;
         color: #f3efde; } }
   .Caterpillar__page-video {
-    width: 60vh; }
+    width: 100%;
+    overflow: hidden; }
     @media screen and (max-width: 1500px) {
       .Caterpillar__page-video {
         position: absolute; } }
+    @media screen and (max-width: 1500px) {
+      .Caterpillar__page-video {
+        width: 80vh; } }
 
 /* ---------------------------------- items --------------------------------- */
 .items {
