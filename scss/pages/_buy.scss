@@ -1,60 +1,126 @@
 .heading {
-    color: black;
-    font-family: "Ubuntu Mono";
-    position: absolute;
-    width: 519px;
-    height: 118px;
-    left: 850px;
-    top: 50px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+
+  &_main-heading {
+    font-family: Ubuntu Mono;
+    position: relative;
+    padding-top: 10rem;
+    padding-left: 105rem;
+    font-size: 12rem;
+    font-weight: 100;
     display: flex;
-    align-items: center;
-}
+  }
 
 &_price {
-        width: 193px;
-        height: 66px;
-        left: 850px;
-        top: 150px;
-        font-size: 25px;
-        line-height: 25px;
-    }
-    
- 
+  font-family: Ubuntu Mono;
+  position: relative;
+  padding-top: 3rem;
+  padding-left: 105rem;
+  font-size: 4rem;
+}
 
 &_sub  {
-    width: 170px;
-    height: 40px;
-    left: 850px;
-    top: 250px;
-     font-size: 20px;
-    line-height: 20px;
+  font-family: Ubuntu Mono;
+  position: relative;
+  padding-top: 5rem;
+  padding-left: 105rem;
+  font-size: 3rem;
 }
 
 &_description  {
-    width: 557px;
-    height: 192px;
-    left: 850px;
-    top: 500px;
-    font-size: 20px;
-    line-height: 20px;
-
+  font-family: "Ubuntu Mono";
+  position: relative;
+  padding-top: 0rem;
+  padding-left: 105rem;
+  font-size: 2rem;
+}
 }
 
-&_dimension  {
-    width: 557px;
-    height: 192px;
-    left: 500px;
-    top: 290px;
-    font-size: 20px;
-    line-height: 20px;
+.image1 {
+  position: absolute;
+  top: 10rem;
+  left: 15rem;
+  width: 10rem;
+  height: 10rem;
 }
 
-.footer {
-  bottom: 0;
-  positon: fixed;
+.image2 {
+  position: absolute;
+  top: 70rem;
+  left: 15rem;
+  width: 25rem;
+  height: 25rem;
 }
 
+.footer{
+  width: 100%;
+  background-color: #000000b6;
+  position: relative;
+  color: #ebe7d9;
+  display: flex;
+  font-size: 2rem;
+  text-decoration: none;
+  padding-top: 0rem;
+  // overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    height: 60vh;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 50vh;
+  }
+  
+
+  &__list {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    @media screen and (max-width: 800px) {
+      margin-left: 2%;
+      margin-right: 5%;
+    }
+  }
+
+  &__list-item {
+    list-style-type: none;
+    padding-top: 4rem;
+    @media screen and (max-width: 1024px) {
+      padding-bottom: 5rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      padding-top: 5rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      padding-bottom: 2rem;
+    }
+  }
+  &__list-link {
+    padding-top: 2rem;
+  }
+
+  &__list-link:hover {
+    text-decoration: underline 1px;
+  }
+
+  &-content {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    width: 14rem;
+  }
+
+  &__left-content {
+    width: 11rem;
+  }
+
+  &__right-content {
+    width: 11rem;
+  }
+}
