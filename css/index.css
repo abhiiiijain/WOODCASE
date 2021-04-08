@@ -536,10 +536,14 @@ h1 {
         filter: brightness(70%); } }
   .artisian__btn {
     color: #000 !important;
-    border-color: #b6b6b693 !important; }
+    border-color: #b6b6b693 !important;
+    margin-left: 20rem; }
     @media screen and (max-width: 1024px) {
       .artisian__btn {
         color: #ffffff !important; } }
+    @media screen and (max-width: 450px) {
+      .artisian__btn {
+        margin-left: 1rem; } }
     .artisian__btn:hover {
       transition: all 0.3s;
       border-color: #ffffff !important; }

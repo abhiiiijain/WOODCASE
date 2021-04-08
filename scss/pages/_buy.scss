@@ -14,29 +14,29 @@
     display: flex;
   }
 
-&_price {
-  font-family: Ubuntu Mono;
-  position: relative;
-  padding-top: 3rem;
-  padding-left: 105rem;
-  font-size: 4rem;
-}
+  &_price {
+    font-family: Ubuntu Mono;
+    position: relative;
+    padding-top: 3rem;
+    padding-left: 105rem;
+    font-size: 4rem;
+  }
 
-&_sub  {
-  font-family: Ubuntu Mono;
-  position: relative;
-  padding-top: 5rem;
-  padding-left: 105rem;
-  font-size: 3rem;
-}
+  &_sub {
+    font-family: Ubuntu Mono;
+    position: relative;
+    padding-top: 5rem;
+    padding-left: 105rem;
+    font-size: 3rem;
+  }
 
-&_description  {
-  font-family: "Ubuntu Mono";
-  position: relative;
-  padding-top: 0rem;
-  padding-left: 105rem;
-  font-size: 2rem;
-}
+  &_description {
+    font-family: "Ubuntu Mono";
+    position: relative;
+    padding-top: 0rem;
+    padding-left: 105rem;
+    font-size: 2rem;
+  }
 }
 
 .image1 {
@@ -55,7 +55,7 @@
   height: 25rem;
 }
 
-.footer{
+.footer {
   width: 100%;
   background-color: #000000b6;
   position: relative;
@@ -73,7 +73,6 @@
   @media screen and (max-width: 800px) {
     height: 50vh;
   }
-  
 
   &__list {
     margin-left: 10%;
