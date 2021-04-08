@@ -8,7 +8,8 @@
     "watch:caterpillar": "node-sass ./scss/caterpillar.scss ./css/caterpillar.css -w",
     "watch:shelfmate": "node-sass ./scss/shelfmate.scss ./css/shelfmate.css -w",
     "watch:buy" :"node-sass ./scss/buy.scss ./css/buy.css -w",
-    "watch:artisian": "node-sass ./scss/artisian.scss ./css/artisian.css -w"
+    "watch:artisian": "node-sass ./scss/artisian.scss ./css/artisian.css -w",
+    "watch:shop": "node-sass ./scss/shop.scss ./css/shop.css -w"
   },
   "author": "Arpit,Abhinandan,Ananya",
   "license": "ISC",
