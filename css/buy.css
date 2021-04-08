@@ -368,97 +368,65 @@ h1 {
       transform: rotate(-135deg);
       top: 0rem; }
 
-.heading {
+.main {
+  padding: 0 8rem; }
+
+header {
+  margin: 3rem; }
+
+.heading-img1 {
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  position: relative; }
-  .heading_main-heading {
-    font-family: Ubuntu Mono;
-    position: relative;
-    padding-top: 10rem;
-    padding-left: 105rem;
-    font-size: 12rem;
-    font-weight: 100;
-    display: flex; }
-  .heading_price {
-    font-family: Ubuntu Mono;
-    position: relative;
-    padding-top: 3rem;
-    padding-left: 105rem;
-    font-size: 4rem; }
-  .heading_sub {
-    font-family: Ubuntu Mono;
-    position: relative;
-    padding-top: 5rem;
-    padding-left: 105rem;
-    font-size: 3rem; }
-  .heading_description {
-    font-family: "Ubuntu Mono";
-    position: relative;
-    padding-top: 0rem;
-    padding-left: 105rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu Mono"; }
+  .heading-img1__content {
+    text-align: left !important;
+    margin-left: 15rem;
+    padding-right: 40rem; }
+  .heading-img1__heading {
+    font-size: 8rem;
+    color: #5a5a5a;
+    margin: 0rem; }
+  .heading-img1__price {
+    font-size: 2.5rem;
+    margin-bottom: 9rem; }
+  .heading-img1__description {
+    font-weight: 300;
+    font-size: 2rem; }
+  .heading-img1__para {
     font-size: 2rem; }
 
-.image1 {
-  position: absolute;
-  top: 10rem;
-  left: 15rem;
-  width: 10rem;
-  height: 10rem; }
-
-.image2 {
-  position: absolute;
-  top: 70rem;
-  left: 15rem;
-  width: 25rem;
-  height: 25rem; }
-
-.footer {
-  width: 100%;
-  background-color: #000000b6;
-  position: relative;
-  color: #ebe7d9;
+.heading-img2 {
   display: flex;
-  font-size: 2rem;
-  text-decoration: none;
-  padding-top: 0rem; }
-  @media screen and (max-width: 1024px) {
-    .footer {
-      height: 60vh; } }
-  @media screen and (max-width: 800px) {
-    .footer {
-      height: 50vh; } }
-  .footer__list {
-    margin-left: 10%;
-    margin-right: 10%; }
-    @media screen and (max-width: 800px) {
-      .footer__list {
-        margin-left: 2%;
-        margin-right: 5%; } }
-  .footer__list-item {
-    list-style-type: none;
-    padding-top: 4rem; }
-    @media screen and (max-width: 1024px) {
-      .footer__list-item {
-        padding-bottom: 5rem; } }
-    @media screen and (max-width: 800px) {
-      .footer__list-item {
-        padding-top: 5rem; } }
-    @media screen and (max-width: 400px) {
-      .footer__list-item {
-        padding-bottom: 2rem; } }
-  .footer__list-link {
-    padding-top: 2rem; }
-  .footer__list-link:hover {
-    text-decoration: underline 1px; }
-  .footer-content {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    font-size: 4rem;
-    border-bottom: 1px solid;
-    width: 14rem; }
-  .footer__left-content {
-    width: 11rem; }
-  .footer__right-content {
-    width: 11rem; }
+  font-family: "Ubuntu Mono";
+  margin-bottom: 8rem; }
+  .heading-img2__content {
+    text-align: left !important;
+    margin-left: 15rem;
+    padding-right: 40rem;
+    color: #000 !important; }
+  .heading-img2__description {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 5rem; }
+  .heading-img2 h3 {
+    font-weight: 300;
+    margin-top: 4rem;
+    margin-bottom: 10rem; }
+  .heading-img2 a {
+    color: #000;
+    font-weight: 200;
+    font-size: 2rem;
+    margin-left: 2rem; }
+
+.button {
+  border: solid 2px rgba(0, 0, 0, 0.534);
+  display: flex;
+  align-items: center;
+  margin: 3rem 0rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  width: 25rem; }
+  .button img {
+    height: 6rem;
+    width: 6rem; }
