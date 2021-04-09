@@ -19,3 +19,15 @@
     font-family: ububtu-mono;
     font-size: 4rem !important;
   }
+
+  figcaption {
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    }
+
+  figure {
+      border: 1px #cccccc solid;
+      padding: 4px;
+      margin: auto;
+    }
