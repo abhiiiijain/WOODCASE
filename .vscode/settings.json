@@ -7,5 +7,6 @@
     "bgimg",
     "caterpillar",
     "overlayleft"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
