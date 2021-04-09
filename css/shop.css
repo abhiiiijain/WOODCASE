@@ -383,8 +383,9 @@ h1 {
   position: relative;
   text-decoration: underline;
   padding-top: 3rem;
+  padding-left: 5rem;
   text-transform: uppercase;
-  font-family: ububtu-mono;
+  font-family: "Ubuntu Mono";
   font-size: 3rem !important; }
 
 .wrapper {
