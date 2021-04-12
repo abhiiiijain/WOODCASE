@@ -376,7 +376,7 @@ h1 {
   padding-top: 4rem; }
 
 .nav {
-  background-color: #2726264a; }
+  background-color: #8d6b51b9; }
 
 .hero__main-heading {
   position: absolute;
@@ -434,7 +434,7 @@ h1 {
 
 /* -------------------------------- shop ------------------------------- */
 .column {
-  float: left;
+  display: inline-flex;
   width: 20%;
   padding: 30px;
   width: 30rem;
@@ -449,20 +449,21 @@ h1 {
 
 .text {
   position: relative;
-  text-decoration: underline;
+  text-decoration: .3rem underline;
   padding-top: 3rem;
   padding-left: 4rem;
   text-transform: uppercase;
   font-family: "Ubuntu Mono";
-  font-size: 4rem !important; }
+  font-size: 3.5rem !important; }
 
 figcaption {
-  font-style: bold;
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.8rem;
   padding: 2px;
   text-align: center; }
 
 figure {
-  border: 1px #000000 solid;
   padding: 4px;
   margin: auto; }
 
@@ -482,3 +483,6 @@ figure {
   text-align: center;
   background-color: #ddd;
   margin-right: 2px; }
+
+.column:last-child {
+  margin-bottom: 5rem; }
