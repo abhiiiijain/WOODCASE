@@ -12,73 +12,7 @@
   }
 }
 
-.hero {
-  text-align: center;
-  color: $primary-color;
-  height: 50vh;
-  position: relative !important;
 
-  &__main-heading {
-    font-size: 7rem !important;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 8rem !important;
-    padding-bottom: 5rem;
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
-      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-
-    animation: glitch 500ms infinite;
-
-    animation: glitch 500ms infinite;
-
-    @media screen and (max-width: 400px) {
-      font-size: 8rem !important;
-      width: 90%;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      color: #ffffff;
-    }
-  }
-
-  .hero__main-heading span {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &__sub-heading {
-    position: absolute;
-    left: 50%;
-    top: 73%;
-    transform: translate(-50%, -50%);
-
-    @media screen and (max-width: 400px) {
-      width: 80%;
-      position: absolute;
-      left: 50%;
-      top: 70%;
-    }
-  }
-
-  &__btn {
-    position: absolute;
-    right: 10rem;
-    bottom: -20rem;
-    z-index: 1;
-
-    @media screen and (max-width: 400px) {
-      position: absolute;
-      left: 10rem;
-      top: 100rem;
-    }
-  }
-}
 
 /* -------------------------------- Animation ------------------------------- */
 
@@ -93,7 +27,6 @@
   100% {
     opacity: 1;
     transform: translateX(0);
-
   }
 }
 

@@ -1,14 +1,32 @@
 .heading-primary {
-    text-align: center;
-    font-family: "Noto Sans JP";
-    font-size: 4rem;
-}
+  color: #fff;
+  text-transform: uppercase;
 
-.heading-tertiary {
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 3rem;
+    margin-bottom: 2rem;
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    animation: moveInRight 1s ease-out;
+  }
+  .heading-tertiary {
     font-size: 2rem;
     font-family: "Ubuntu Mono";
 
     @media screen and (max-width: 400px) {
       font-size: 3rem;
     }
+  }
 }
