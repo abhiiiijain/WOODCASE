@@ -525,7 +525,7 @@ h1 {
     padding-left: 20rem;
     width: 49rem;
     margin-bottom: 9rem; }
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1600px) {
       .artisian__para {
         font-size: 2rem; } }
     @media screen and (max-width: 1200px) {
