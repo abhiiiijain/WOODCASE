@@ -510,7 +510,7 @@ figure {
   line-height: 2.6; }
 
 .box:hover {
-  flex: 1 1 35%; }
+  flex: 1 1 15%; }
 
 .box:hover > img {
   width: 100%;
