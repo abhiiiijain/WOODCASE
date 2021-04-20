@@ -468,7 +468,7 @@ h1 {
   font-size: 3.5rem !important; }
 
 figcaption {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   font-weight: 300;
   font-size: 1.8rem;
   padding: 2px;
@@ -476,7 +476,7 @@ figcaption {
 
 figure {
   border: 1px #000000 solid;
-  padding: 4px;
+  padding: 6px;
   margin: auto; }
 
 .column:last-child {
@@ -510,7 +510,7 @@ figure {
   line-height: 2.6; }
 
 .box:hover {
-  flex: 1 1 50%; }
+  flex: 1 1 35%; }
 
 .box:hover > img {
   width: 100%;
