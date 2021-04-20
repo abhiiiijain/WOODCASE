@@ -6,29 +6,67 @@
   background-size: cover;
   background-position: center;
   padding-top: 4rem;
+  position: relative;
 
   @media screen and (max-width: 800px) {
     background-image: url(../../images/main_pages/home-mobile-desktop.jpg);
   }
 }
 
+.nav {
+  background-color: #2726264a;
+}
 
+.hero {
+  &__main-heading {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 10rem !important;
+    padding-bottom: 5rem;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 500ms infinite;
+
+    animation: glitch 500ms infinite;
+    padding-bottom: 0rem;
+  }
+
+  .hero__main-heading span {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  &__scribble {
+    position: absolute;
+    top: 45%;
+    left: 26%;
+    width: 50%;
+    z-index: 0;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 10rem;
+    bottom: 15rem;
+    z-index: 1;
+
+    @media screen and (max-width: 400px) {
+      position: absolute;
+      left: 20rem;
+      bottom: 35rem;
+    }
+  }
+}
 
 /* -------------------------------- Animation ------------------------------- */
 
-@keyframes moveLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  80% {
-    transform: translateX(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
 @keyframes glitch {
   0% {
