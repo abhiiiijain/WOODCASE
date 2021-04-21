@@ -762,12 +762,13 @@ h1 {
     margin: 0;
     padding-top: 5rem;
     padding-left: 20rem; }
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1600px) {
       .Shelfmate__heading {
         font-size: 8rem;
         position: absolute;
-        top: 15rem;
-        left: 3rem; } }
+        top: 0rem;
+        left: 3rem;
+        padding-left: 15rem; } }
     @media screen and (max-width: 1000px) {
       .Shelfmate__heading {
         font-size: 7rem;
@@ -787,14 +788,15 @@ h1 {
     padding-top: 0.5rem;
     padding-left: 20rem;
     width: 49rem; }
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1600px) {
       .Shelfmate__subheading {
         position: absolute;
-        top: 30rem;
+        top: 12rem;
         left: 3rem;
         font-size: 3rem;
         text-decoration: underline 1px;
-        width: 70rem; } }
+        width: 70rem;
+        padding-left: 15rem; } }
     @media screen and (max-width: 1000px) {
       .Shelfmate__subheading {
         font-size: 3rem;
@@ -812,13 +814,14 @@ h1 {
     padding-left: 20rem;
     width: 49rem;
     margin-bottom: 9rem; }
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1600px) {
       .Shelfmate__para {
-        top: 55rem;
+        top: 25rem;
         left: 3rem;
-        font-size: 4rem;
-        width: 90rem;
-        position: absolute; } }
+        font-size: 2.5rem;
+        width: 70rem;
+        position: absolute;
+        padding-left: 15rem; } }
     @media screen and (max-width: 1000px) {
       .Shelfmate__para {
         font-size: 4rem;
@@ -839,12 +842,12 @@ h1 {
     .Shelfmate__btn:hover {
       transition: all 0.3s;
       border-color: #ffffff !important; }
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1600px) {
       .Shelfmate__btn {
         border-color: #ffffff !important;
         color: #f3efde;
-        top: 120rem;
-        left: 30%; } }
+        top: 60rem;
+        left: 15rem; } }
     @media screen and (max-width: 1000px) {
       .Shelfmate__btn {
         position: absolute; } }
