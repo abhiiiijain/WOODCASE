@@ -67,7 +67,6 @@
 
 /* -------------------------------- Animation ------------------------------- */
 
-
 @keyframes glitch {
   0% {
     text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
@@ -454,14 +453,6 @@
   overflow: hidden;
   padding: 5rem;
   position: relative;
-
-  @media screen and (max-width: 1500px) {
-    color: #f3efde;
-    display: block;
-    margin-top: -5rem;
-    height: 82vh;
-    padding: 0rem;
-  }
 
   @media screen and (max-width: 1000px) {
     height: 100vh;
