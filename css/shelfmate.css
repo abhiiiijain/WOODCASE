@@ -488,11 +488,17 @@ h1 {
     margin: 0;
     padding-top: 5rem;
     padding-left: 20rem; }
+    @media screen and (max-width: 1600px) {
+      .Shelfmate__heading {
+        font-size: 6rem;
+        position: absolute;
+        top: 1rem;
+        left: 5rem; } }
     @media screen and (max-width: 1500px) {
       .Shelfmate__heading {
         font-size: 8rem;
         position: absolute;
-        top: 15rem;
+        top: 2rem;
         left: 3rem; } }
     @media screen and (max-width: 1000px) {
       .Shelfmate__heading {
@@ -513,18 +519,26 @@ h1 {
     padding-top: 0.5rem;
     padding-left: 20rem;
     width: 49rem; }
+    @media screen and (max-width: 1600px) {
+      .Shelfmate__subheading {
+        position: absolute;
+        top: 12rem;
+        left: 5rem;
+        font-size: 2.2rem;
+        text-decoration: underline 1px;
+        width: 70rem; } }
     @media screen and (max-width: 1500px) {
       .Shelfmate__subheading {
         position: absolute;
-        top: 30rem;
+        top: 15rem;
         left: 3rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-decoration: underline 1px;
-        width: 70rem; } }
+        width: 100rem; } }
     @media screen and (max-width: 1000px) {
       .Shelfmate__subheading {
-        font-size: 3rem;
-        top: 35rem;
+        font-size: 5rem;
+        top: rem;
         left: -6rem;
         text-decoration: underline 1px;
         width: 70rem; } }
@@ -538,11 +552,18 @@ h1 {
     padding-left: 20rem;
     width: 49rem;
     margin-bottom: 9rem; }
+    @media screen and (max-width: 1600px) {
+      .Shelfmate__para {
+        top: 22rem;
+        left: 5rem;
+        font-size: 2rem;
+        width: 60rem;
+        position: absolute; } }
     @media screen and (max-width: 1500px) {
       .Shelfmate__para {
-        top: 55rem;
+        top: 23rem;
         left: 3rem;
-        font-size: 4rem;
+        font-size: 2rem;
         width: 90rem;
         position: absolute; } }
     @media screen and (max-width: 1000px) {
@@ -565,16 +586,23 @@ h1 {
     .Shelfmate__btn:hover {
       transition: all 0.3s;
       border-color: #ffffff !important; }
+    @media screen and (max-width: 1600px) {
+      .Shelfmate__btn {
+        border-color: #ffffff !important;
+        color: #f3efde;
+        top: 50rem;
+        left: 25rem; } }
     @media screen and (max-width: 1500px) {
       .Shelfmate__btn {
         border-color: #ffffff !important;
         color: #f3efde;
-        top: 120rem;
-        left: 75rem; } }
+        top: 50rem;
+        left: 80rem; } }
     @media screen and (max-width: 1000px) {
       .Shelfmate__btn {
         position: absolute;
-        left: 60rem; } }
+        left: 60rem;
+        top: 20rem; } }
     @media screen and (max-width: 500px) {
       .Shelfmate__btn {
         position: absolute;
@@ -599,12 +627,12 @@ h1 {
   .Shelfmate__page-video {
     width: 100%;
     overflow: hidden; }
-    @media screen and (max-width: 1500px) {
+    @media screen and (max-width: 1600px) {
       .Shelfmate__page-video {
-        position: absolute; } }
-    @media screen and (max-width: 1500px) {
+        position: relative; } }
+    @media screen and (max-width: 1600px) {
       .Shelfmate__page-video {
-        width: 80vh; } }
+        width: 100%; } }
 
 /* ---------------------------------- items --------------------------------- */
 .items {
