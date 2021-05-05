@@ -433,12 +433,12 @@
 
   @media screen and (max-width: 1200px) {
     top: 0rem;
-    left: 69rem;
+    left: 57rem;
   }
 
   @media screen and (max-width: 400px) {
-    top: 15rem;
-    left: 52rem;
+    top: 12rem;
+    left: 45rem;
     width: 20rem;
   }
 }
@@ -454,8 +454,9 @@
   padding: 5rem;
   position: relative;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1025px) {
     height: 100vh;
+    width: 100%;
     padding: 0rem;
   }
 
@@ -467,17 +468,18 @@
     padding-left: 20rem;
 
     @media screen and (max-width: 1600px) {
-      font-size: 8rem;
+      font-size: 5rem;
       position: absolute;
       top: 0rem;
       left: 3rem;
       padding-left: 15rem;
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       font-size: 7rem;
       padding-top: 8rem;
       padding-left: 10rem;
+      color: #f3efde;
     }
 
     @media screen and (max-width: 550px) {
@@ -485,7 +487,7 @@
     }
 
     @media screen and (max-width: 400px) {
-      font-size: 8rem;
+      font-size: 10rem !important;
     }
   }
 
@@ -504,19 +506,20 @@
       left: 3rem;
       font-size: 3rem;
       text-decoration: underline 1px;
-      width: 70rem;
+      width: 60rem;
       padding-left: 15rem;
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       font-size: 3rem;
-      top: 35rem;
+      color: #f3efde;
+      top: 30rem;
       left: -6rem;
       text-decoration: underline 1px;
       width: 70rem;
     }
     @media screen and (max-width: 450px) {
-      font-size: 2.5rem !important;
+      font-size: 3.5rem !important;
     }
   }
 
@@ -529,29 +532,30 @@
     margin-bottom: 9rem;
 
     @media screen and (max-width: 1600px) {
-      top: 25rem;
+      top: 34rem;
       left: 3rem;
       font-size: 2.5rem;
-      width: 70rem;
+      width: 60rem;
       position: absolute;
       padding-left: 15rem;
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       font-size: 4rem;
       width: 90rem;
       top: 55rem;
       left: -6rem;
+      color: #f3efde;
     }
 
     @media screen and (max-width: 450px) {
       width: 70rem;
-      font-size: 2.8rem !important;
+      font-size: 2.8rem;
     }
 
     @media screen and (max-width: 400px) {
       width: 70rem;
-      font-size: 3.4rem;
+      font-size: 4.4rem;
     }
   }
 
@@ -561,57 +565,32 @@
 
     &:hover {
       transition: all 0.3s;
-      border-color: #ffffff !important;
+      border-color: #ac896ecb !important;
     }
 
     @media screen and (max-width: 1600px) {
-      border-color: #ffffff !important;
-      color: #f3efde;
-      top: 60rem;
+      border-color: #ac896ecb !important;
+      color: #ac896ecb;
+      top: 70rem;
       left: 15rem;
-      // left: 30%;
     }
 
     @media screen and (max-width: 1000px) {
       position: absolute;
-      // bottom: 27rem;
-    }
-
-    @media screen and (max-width: 500px) {
-      position: absolute;
-      // bottom: 35rem;
+      top: 106rem;
       color: #f3efde;
     }
 
     @media screen and (max-width: 400px) {
-      position: absolute;
-
-      // bottom: 35rem;
-      color: #f3efde;
+      top: 96rem;
+      left: -13rem;
     }
 
-    @media screen and (max-height: 670px) {
-      position: absolute;
-      // bottom: 5rem;
-      color: #f3efde;
+    @media screen and (max-height: 850px) {
+      top: 130rem;
     }
-    @media screen and (max-height: 750px) {
-      position: absolute;
-      // top: 95rem;
-      bottom: 8rem;
-      color: #f3efde;
-    }
-  }
-
-  &__page-video {
-    width: 100%;
-    overflow: hidden;
-
-    @media screen and (max-width: 1500px) {
-      position: absolute;
-    }
-    @media screen and (max-width: 200px) {
-      width: 80vh;
+    @media screen and (max-height: 768px) {
+      top: 70rem;
     }
   }
 }

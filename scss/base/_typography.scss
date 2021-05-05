@@ -12,6 +12,10 @@
     letter-spacing: 3rem;
     margin-bottom: 2rem;
     animation: moveInLeft 1s ease-out;
+
+    @media screen and (max-height: 850px) {
+      font-size: 8rem;
+    }
   }
 
   &--sub {

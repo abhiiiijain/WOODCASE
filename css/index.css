@@ -235,6 +235,9 @@ h1 {
     letter-spacing: 3rem;
     margin-bottom: 2rem;
     animation: moveInLeft 1s ease-out; }
+    @media screen and (max-height: 850px) {
+      .heading-primary--main {
+        font-size: 8rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -729,11 +732,11 @@ h1 {
   @media screen and (max-width: 1200px) {
     .scribble-right {
       top: 0rem;
-      left: 69rem; } }
+      left: 57rem; } }
   @media screen and (max-width: 400px) {
     .scribble-right {
-      top: 15rem;
-      left: 52rem;
+      top: 12rem;
+      left: 45rem;
       width: 20rem; } }
 
 /* ---------------------------- shelfmate section --------------------------- */
@@ -745,16 +748,10 @@ h1 {
   overflow: hidden;
   padding: 5rem;
   position: relative; }
-  @media screen and (max-width: 1500px) {
-    .Shelfmate {
-      color: #f3efde;
-      display: block;
-      margin-top: -5rem;
-      height: 82vh;
-      padding: 0rem; } }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1025px) {
     .Shelfmate {
       height: 100vh;
+      width: 100%;
       padding: 0rem; } }
   .Shelfmate__heading {
     font-size: 5rem;
@@ -764,22 +761,23 @@ h1 {
     padding-left: 20rem; }
     @media screen and (max-width: 1600px) {
       .Shelfmate__heading {
-        font-size: 8rem;
+        font-size: 5rem;
         position: absolute;
         top: 0rem;
         left: 3rem;
         padding-left: 15rem; } }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       .Shelfmate__heading {
         font-size: 7rem;
         padding-top: 8rem;
-        padding-left: 10rem; } }
+        padding-left: 10rem;
+        color: #f3efde; } }
     @media screen and (max-width: 550px) {
       .Shelfmate__heading {
         font-size: 5rem !important; } }
     @media screen and (max-width: 400px) {
       .Shelfmate__heading {
-        font-size: 8rem; } }
+        font-size: 10rem !important; } }
   .Shelfmate__subheading {
     text-decoration: underline 2px;
     font-size: 2rem;
@@ -795,18 +793,19 @@ h1 {
         left: 3rem;
         font-size: 3rem;
         text-decoration: underline 1px;
-        width: 70rem;
+        width: 60rem;
         padding-left: 15rem; } }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       .Shelfmate__subheading {
         font-size: 3rem;
-        top: 35rem;
+        color: #f3efde;
+        top: 30rem;
         left: -6rem;
         text-decoration: underline 1px;
         width: 70rem; } }
     @media screen and (max-width: 450px) {
       .Shelfmate__subheading {
-        font-size: 2.5rem !important; } }
+        font-size: 3.5rem !important; } }
   .Shelfmate__para {
     font-size: 2.5rem;
     margin-top: 0;
@@ -816,67 +815,54 @@ h1 {
     margin-bottom: 9rem; }
     @media screen and (max-width: 1600px) {
       .Shelfmate__para {
-        top: 25rem;
+        top: 34rem;
         left: 3rem;
         font-size: 2.5rem;
-        width: 70rem;
+        width: 60rem;
         position: absolute;
         padding-left: 15rem; } }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       .Shelfmate__para {
         font-size: 4rem;
         width: 90rem;
         top: 55rem;
-        left: -6rem; } }
+        left: -6rem;
+        color: #f3efde; } }
     @media screen and (max-width: 450px) {
       .Shelfmate__para {
         width: 70rem;
-        font-size: 2.8rem !important; } }
+        font-size: 2.8rem; } }
     @media screen and (max-width: 400px) {
       .Shelfmate__para {
         width: 70rem;
-        font-size: 3.4rem; } }
+        font-size: 4.4rem; } }
   .Shelfmate__btn {
     color: #2726264a;
     left: 40%; }
     .Shelfmate__btn:hover {
       transition: all 0.3s;
-      border-color: #ffffff !important; }
+      border-color: #ac896ecb !important; }
     @media screen and (max-width: 1600px) {
       .Shelfmate__btn {
-        border-color: #ffffff !important;
-        color: #f3efde;
-        top: 60rem;
+        border-color: #ac896ecb !important;
+        color: #ac896ecb;
+        top: 70rem;
         left: 15rem; } }
     @media screen and (max-width: 1000px) {
       .Shelfmate__btn {
-        position: absolute; } }
-    @media screen and (max-width: 500px) {
-      .Shelfmate__btn {
         position: absolute;
+        top: 106rem;
         color: #f3efde; } }
     @media screen and (max-width: 400px) {
       .Shelfmate__btn {
-        position: absolute;
-        color: #f3efde; } }
-    @media screen and (max-height: 670px) {
+        top: 96rem;
+        left: -13rem; } }
+    @media screen and (max-height: 850px) {
       .Shelfmate__btn {
-        position: absolute;
-        color: #f3efde; } }
-    @media screen and (max-height: 750px) {
+        top: 130rem; } }
+    @media screen and (max-height: 768px) {
       .Shelfmate__btn {
-        position: absolute;
-        bottom: 8rem;
-        color: #f3efde; } }
-  .Shelfmate__page-video {
-    width: 100%;
-    overflow: hidden; }
-    @media screen and (max-width: 1500px) {
-      .Shelfmate__page-video {
-        position: absolute; } }
-    @media screen and (max-width: 200px) {
-      .Shelfmate__page-video {
-        width: 80vh; } }
+        top: 70rem; } }
 
 .btn-explore {
   margin-left: 0; }
