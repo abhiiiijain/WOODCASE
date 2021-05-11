@@ -768,11 +768,11 @@ h1 {
 }
 .Shelfmate__btn:hover {
   transition: all 0.3s;
-  border-color: ##8d6b51cb !important;
+  border-color: #8d6b51cb !important;
 }
 @media screen and (max-width: 1600px) {
   .Shelfmate__btn {
-    border-color: ##8d6b51cb !important;
+    border-color: #8d6b51cb !important;
     color: #f3efde;
     top: 50rem;
     left: 25rem;
