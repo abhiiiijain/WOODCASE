@@ -44,7 +44,7 @@
     '/html/caterpillar.html" class="navigation__link">Caterpillar</a></li>' +
     '<li class="navigation__item"><a href="' +
     base +
-    '/html/artisian.html" class="navigation__link">Artisian</a></li>' +
+    '/html/artisan.html" class="navigation__link">Artisan</a></li>' +
     '<li class="navigation__item"><a href="' +
     shop +
     '" class="navigation__link">Shop</a></li>' +
@@ -67,7 +67,7 @@
     '/html/caterpillar.html" class="nav__list-link hover">Caterpillar</a></li>' +
     '<li class="nav__list-items"><a href="' +
     base +
-    '/html/artisian.html" class="nav__list-link hover">Artisian</a></li>' +
+    '/html/artisan.html" class="nav__list-link hover">Artisan</a></li>' +
     '<li class="nav__list-items"><a href="' +
     shop +
     '" class="nav__list-link hover">Shop</a></li>' +
@@ -112,6 +112,7 @@
     footerLink("#faq", "FAQ'S") +
     "</ul>" +
     '<ul class="footer__list"><div class="footer-content">About</div>' +
+    footerLink("#about", "About WoodCase") +
     footerLink("#stores", "Stores") +
     footerLink("#newsroom", "Newsroom") +
     footerLink("#careers", "Working at WoodCase") +

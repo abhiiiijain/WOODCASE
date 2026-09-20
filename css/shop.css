@@ -46,6 +46,10 @@ video {
   max-width: 100%;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .u-overflow {
   overflow: hidden;
 }
@@ -356,6 +360,8 @@ header.bgimg .nav,
 }
 
 figcaption {
+  display: grid;
+  gap: 0.2rem;
   margin-top: 1rem;
   font-weight: 400;
   font-size: 1.4rem;
@@ -363,6 +369,14 @@ figcaption {
   padding: 0 0 1.4rem;
   text-align: center;
   color: #6b6157;
+}
+
+.box__name {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2a231c;
 }
 
 figure {
@@ -444,4 +458,12 @@ figure {
   max-width: 58rem;
   font-size: 1.6rem;
   color: #6b6157;
+}
+
+.info-page__lead {
+  margin: -1.6rem 0 4.8rem !important;
+}
+
+.info-page a {
+  color: #8d6b51;
 }

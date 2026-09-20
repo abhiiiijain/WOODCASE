@@ -46,6 +46,10 @@ video {
   max-width: 100%;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .u-overflow {
   overflow: hidden;
 }
@@ -99,6 +103,24 @@ video {
   text-transform: uppercase;
   border-bottom: 1px solid rgba(243, 239, 222, 0.18);
   width: auto;
+}
+
+.product-missing {
+  padding: var(--section-space) var(--page-gutter) 8rem;
+  max-width: 76rem;
+}
+
+.product-missing h1 {
+  margin: 0 0 1.6rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3.6rem, 5vw, 5.6rem);
+  color: #2a231c;
+}
+
+.product-missing p,
+.product-missing a {
+  font-size: 1.6rem;
+  color: #6b6157;
 }
 
 .product-bar {

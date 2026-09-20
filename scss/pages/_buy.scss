@@ -1,3 +1,21 @@
+.product-missing {
+  padding: var(--section-space) var(--page-gutter) 8rem;
+  max-width: 76rem;
+}
+
+.product-missing h1 {
+  margin: 0 0 1.6rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3.6rem, 5vw, 5.6rem);
+  color: #2a231c;
+}
+
+.product-missing p,
+.product-missing a {
+  font-size: 1.6rem;
+  color: #6b6157;
+}
+
 .product-bar {
   display: flex;
   align-items: center;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WoodCase</title>
+    <link rel="stylesheet" href="../css/buy.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../images/icons/fav icon.png"
+    />
+  </head>
+
+  <body>
+    <header class="product-bar">
+      <a href="shop.html" class="product-bar__back" id="product-back"
+        >Back to shop</a
+      >
+      <a href="../index.html" class="product-bar__logo">WOODCASE</a>
+    </header>
+
+    <main id="product-missing" class="product-missing" hidden>
+      <h1>Piece not found</h1>
+      <p><a href="shop.html">Return to the shop</a> to see the current collection.</p>
+    </main>
+
+    <main class="product" id="product-page" hidden>
+      <section class="product__hero">
+        <div class="product__gallery">
+          <input
+            class="product__choice product__choice--a"
+            type="radio"
+            name="product-photo"
+            id="photo-a"
+          />
+          <input
+            class="product__choice product__choice--b"
+            type="radio"
+            name="product-photo"
+            id="photo-b"
+            checked
+          />
+          <div class="product__stage">
+            <img class="product__photo product__photo--a" id="product-photo-a" alt="" />
+            <img class="product__photo product__photo--b" id="product-photo-b" alt="" />
+          </div>
+          <div class="product__thumbs">
+            <label class="product__thumb product__thumb--a" for="photo-a">
+              <img id="product-thumb-a" alt="" />
+            </label>
+            <label class="product__thumb product__thumb--b" for="photo-b">
+              <img id="product-thumb-b" alt="" />
+            </label>
+          </div>
+        </div>
+        <div class="product__info">
+          <p class="product__eyebrow" id="product-eyebrow"></p>
+          <h1 class="product__title" id="product-title"></h1>
+          <p class="product__price" id="product-price"></p>
+          <p class="product__copy" id="product-copy"></p>
+          <dl class="product__specs">
+            <div class="product__spec">
+              <dt>Dimensions</dt>
+              <dd id="product-dimensions"></dd>
+            </div>
+            <div class="product__spec">
+              <dt>Materials</dt>
+              <dd id="product-materials"></dd>
+            </div>
+          </dl>
+          <div class="product__actions">
+            <a class="product__buy" href="info.html#contact">Enquire</a>
+            <a class="product__cart" id="product-more" href="shop.html"
+              >More in this collection</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-chrome="footer"></div>
+    <script src="../js/site-chrome.js"></script>
+    <script src="../js/catalog.js"></script>
+    <script src="../js/product.js"></script>
+  </body>
+</html>

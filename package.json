@@ -7,7 +7,7 @@
     "watch:css": "sass --watch --no-source-map scss/index.scss:css/index.css scss/shop.scss:css/shop.css scss/buy.scss:css/buy.css scss/artisian.scss:css/artisian.css scss/caterpillar.scss:css/caterpillar.css scss/shelfmate.scss:css/shelfmate.css"
   },
   "author": "Abhinandan",
-  "homepage": "https://abhiiiijain.github.io/WOODCASE/",
+  "homepage": "https://abhiiiijain.github.io/woodcase/",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.77.0"
