@@ -1,0 +1,141 @@
+@use "../base/base" as *;
+
+@mixin collection-hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100svh;
+  height: auto;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(28, 24, 20, 0.22) 0%,
+      rgba(28, 24, 20, 0.5) 100%
+    );
+    pointer-events: none;
+  }
+}
+
+@mixin collection-story-block {
+  @include story-section;
+
+  &__content {
+    @include story-copy;
+  }
+
+  &__heading {
+    font-size: clamp(3.6rem, 4.5vw, 5.2rem);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    margin: 0 0 1.2rem;
+  }
+
+  &__subheading {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 1.8rem;
+    max-width: var(--content-max);
+    color: #8d6b51;
+  }
+
+  &__para {
+    font-size: 1.6rem;
+    margin: 0 0 2.8rem;
+    max-width: var(--content-max);
+    color: #6b6157;
+  }
+
+  &__btn {
+    color: #2a231c !important;
+    border-color: #2a231c !important;
+
+    &:hover {
+      background: #2a231c;
+      color: #f3efde !important;
+    }
+  }
+
+  &__page-video {
+    @include story-media;
+  }
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: var(--page-gutter);
+  padding-bottom: clamp(4rem, 7vw, 8rem);
+  position: relative;
+  z-index: 1;
+
+  &__main-heading {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(3.6rem, 6vw, 6.8rem) !important;
+    letter-spacing: 0.06em;
+    padding-bottom: 0;
+  }
+
+  &__btn {
+    margin-top: 2.4rem;
+  }
+}
+
+#section_items {
+  padding: 0 var(--page-gutter) var(--section-space);
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  overflow: hidden;
+
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
+
+.bg-color,
+.transition_img {
+  background-color: #e5ddd6;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  inset: 0;
+}

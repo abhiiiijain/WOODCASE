@@ -1,86 +1,222 @@
-.main {
-  padding: 0 8rem;
-}
-
-header {
-  margin: 3rem;
-}
-.heading-img1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Ubuntu Mono";
-
-  &__content {
-    text-align: left !important;
-    margin-left: 15rem;
-    padding-right: 40rem;
-  }
-
-  &__heading {
-    font-size: 8rem;
-    color: #5a5a5a;
-    margin: 0rem;
-  }
-
-  &__price {
-    font-size: 2.5rem;
-    margin-bottom: 9rem;
-  }
-
-  &__description {
-    font-weight: 300;
-    font-size: 2rem;
-  }
-
-  &__para {
-    font-size: 2rem;
-  }
-}
-
-.heading-img2 {
-  display: flex;
-  font-family: "Ubuntu Mono";
-  margin-bottom: 8rem;
-
-  &__content {
-    text-align: left !important;
-    margin-left: 15rem;
-    padding-right: 40rem;
-    color: #000 !important;
-  }
-  
-
-  &__description {
-    font-weight: 300;
-    font-size: 2.5rem;
-    margin-bottom: 5rem;
-  }
-  h3 {
-    font-weight: 300;
-    margin-top: 4rem;
-    margin-bottom: 10rem;
-
-  }
-  a {
-    color: #000;
-    font-weight: 200;
-    font-size: 2rem;
-    margin-left: 2rem;
-  }
-}
-
-.button {
-  border: solid 2px rgba(0, 0, 0, 0.534);
+.product-bar {
   display: flex;
   align-items: center;
-  margin: 3rem 0rem;
-  padding: 1rem;
-  border-radius: 0.3rem;
-  width: 25rem;
+  justify-content: space-between;
+  gap: 1.6rem;
+  min-height: 7.2rem;
+  padding: 0 var(--page-gutter);
+  background: #1c1814;
+  color: #f3efde;
+}
+
+.product-bar__back,
+.product-bar__logo {
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f3efde;
+}
+
+.product-bar__logo {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+}
+
+.product-bar__back:hover,
+.product-bar__logo:hover {
+  color: #c4a484;
+}
+
+.product__hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(30rem, 0.8fr);
+  align-items: stretch;
+  min-height: calc(100vh - 7.2rem);
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+}
+
+.product__gallery {
+  position: relative;
+  height: calc(100vh - 7.2rem);
+  min-height: 42rem;
+  background: #1c1814;
+
+  @media screen and (max-width: 800px) {
+    height: 42rem;
+  }
+}
+
+.product__choice {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.product__stage {
+  position: absolute;
+  inset: 0;
+}
+
+.product__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.product__choice--a:checked ~ .product__stage .product__photo--a,
+.product__choice--b:checked ~ .product__stage .product__photo--b {
+  opacity: 1;
+}
+
+.product__thumbs {
+  position: absolute;
+  left: 1.6rem;
+  bottom: 1.6rem;
+  z-index: 2;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.product__thumb {
+  display: block;
+  width: 6.4rem;
+  height: 6.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(243, 239, 222, 0.35);
+  opacity: 0.72;
 
   img {
-    height: 6rem;
-    width: 6rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+}
+
+.product__choice--a:checked ~ .product__thumbs .product__thumb--a,
+.product__choice--b:checked ~ .product__thumbs .product__thumb--b {
+  opacity: 1;
+  border-color: #f3efde;
+}
+
+.product__info {
+  padding: var(--section-space) var(--page-gutter);
+}
+
+.product__eyebrow {
+  margin: 0 0 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8d6b51;
+}
+
+.product__title {
+  margin: 0 0 1.2rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(4rem, 6vw, 6.4rem);
+  font-weight: 500;
+  line-height: 1;
+  color: #2a231c;
+}
+
+.product__price {
+  margin: 0 0 2.8rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  color: #8d6b51;
+}
+
+.product__copy {
+  margin: 0 0 3.2rem;
+  max-width: 46rem;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #6b6157;
+}
+
+.product__specs {
+  display: grid;
+  gap: 1.6rem;
+  margin: 0 0 3.2rem;
+  padding: 2.4rem 0 0;
+  border-top: 1px solid rgba(42, 35, 28, 0.12);
+}
+
+.product__spec {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.product__spec dt {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2a231c;
+}
+
+.product__spec dd {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #6b6157;
+}
+
+.product__actions {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.product__buy,
+.product__cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 32rem;
+  padding: 1.5rem 2.2rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.product__buy {
+  background: #2a231c;
+  border: 1px solid #2a231c;
+  color: #f3efde;
+}
+
+.product__buy:hover {
+  background: #8d6b51;
+  border-color: #8d6b51;
+}
+
+.product__cart {
+  background: transparent;
+  border: 1px solid rgba(42, 35, 28, 0.28);
+  color: #2a231c;
+}
+
+.product__cart:hover {
+  background: #2a231c;
+  border-color: #2a231c;
+  color: #f3efde;
 }

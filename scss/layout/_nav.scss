@@ -1,87 +1,113 @@
-/* --------------------------------- NavBar --------------------------------- */
+$animate: all 0.2s ease-in-out;
 
 .nav {
-  background-color: rgba(226, 206, 187, 0.096);
-  height: 9rem;
   display: flex;
   align-items: center;
-  overflow: hidden;
-
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
+  justify-content: space-between;
+  width: 100%;
+  height: 8rem;
+  padding: 0 var(--page-gutter);
+  background-color: rgba(28, 24, 20, 0.32);
+  backdrop-filter: blur(12px);
+  overflow: visible;
+  position: relative;
+  z-index: 20;
 
   &__logo {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin: 0;
+    flex-shrink: 0;
   }
 
   &__logo-heading {
-    height: 7.3rem;
-    width: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
+    height: auto;
+    width: auto;
+    display: block;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
     color: #f3efde;
-    font-weight: 600;
-    margin-left: 5rem;
-
-    @media screen and (max-width: 1712px) {
-      margin-left: 5rem;
-    }
+    margin: 0;
+    text-transform: uppercase;
   }
 
   &__list {
-    width: 125rem;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     align-items: center;
     justify-content: center;
-    margin-left: 6rem;
-    padding-left: 0rem;
-
-    @media screen and (max-width: 1712px) {
-      margin-left: 0rem;
-    }
+    flex: 1;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    gap: 2.4rem;
 
     &-items {
-      margin: 3rem;
-      align-items: center;
+      margin: 0;
     }
 
     &-link {
-      align-items: center;
-      font-size: 2.5rem;
-      padding: 0.3rem;
+      font-size: 1.3rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4rem 0;
+      color: #f3efde;
     }
   }
 
   &__icons-list {
-    width: 30rem;
-    justify-content: center;
-    align-items: center;
     display: flex;
-
-    @media screen and (max-width: 1712px) {
-      padding-left: 0rem;
-    }
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
   }
 
   &__icons-list-item {
-    margin: 2rem;
+    margin: 0 0 0 1.6rem;
     list-style-type: none;
   }
 
   &__icons {
-    height: 3.8rem;
-    width: 3.5rem;
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.92;
   }
 }
 
-/* ---------------------------- Animation of NAVBAR ---------------------------- */
+@media screen and (max-width: 1100px) {
+  .nav__list {
+    gap: 1.6rem;
+  }
+}
 
-$animate: all 0.2s ease-in-out;
+@media screen and (max-width: 1024px) {
+  .nav {
+    height: 6.8rem;
+    padding: 0 7.2rem 0 2.4rem;
+    background-color: #1c1814;
+
+    &__list,
+    &__icons-list {
+      display: none;
+    }
+
+    &__logo-heading {
+      font-size: 1.8rem;
+      letter-spacing: 0.14em;
+    }
+  }
+}
+
+header.bgimg .nav,
+.buy-page .nav {
+  background-color: #1c1814;
+}
 
 .hover {
   text-align: center;
@@ -89,30 +115,21 @@ $animate: all 0.2s ease-in-out;
   padding: 0;
   transition: $animate;
   position: relative;
+
   &:before {
     content: "";
     position: absolute;
-    bottom: -5px;
-    width: 0px;
-    height: 2px;
-    margin: 1px 0 0;
+    bottom: -0.4rem;
+    left: 0;
+    width: 0;
+    height: 1px;
     transition: $animate;
-    transition-duration: 0.75s;
     opacity: 0;
     background-color: #f3efde;
   }
-  &.hover-1 {
-    &:before {
-      left: 0;
-    }
-  }
-}
-.example:hover {
-  cursor: pointer;
-  .hover {
-    &:before {
-      width: 100%;
-      opacity: 1;
-    }
+
+  &:hover:before {
+    width: 100%;
+    opacity: 1;
   }
 }

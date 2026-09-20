@@ -1,600 +1,161 @@
-/* ------------------------------- HeroSection ------------------------------ */
+@use "../layout/collection" as *;
+@use "../base/base" as *;
+
 .bgimg-hero {
-  background-image: url("../../images/main_pages/Hero_home__desktop_.jpg");
+  @include collection-hero;
   width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  padding-top: 4rem;
-  position: relative;
+  background-image: url("../images/main_pages/Hero_home__desktop_.jpg");
+
+  &::after {
+    background: linear-gradient(
+      180deg,
+      rgba(28, 24, 20, 0.22) 0%,
+      rgba(28, 24, 20, 0.08) 42%,
+      rgba(28, 24, 20, 0.58) 100%
+    );
+  }
 
   @media screen and (max-width: 800px) {
-    background-image: url(../../images/main_pages/home-mobile-desktop.jpg);
+    background-image: url("../images/main_pages/home-mobile-desktop.jpg");
   }
 }
 
-.nav {
-  background-color: #2726264a;
+.hero__main-heading {
+  font-size: inherit !important;
+  font-family: inherit;
 }
 
-.hero {
-  &__main-heading {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 10rem !important;
-    padding-bottom: 5rem;
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
-      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-
-    animation: glitch 500ms infinite;
-
-    animation: glitch 500ms infinite;
-    padding-bottom: 0rem;
-  }
-
-  .hero__main-heading span {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-
-  &__scribble {
-    position: absolute;
-    top: 45%;
-    left: 26%;
-    width: 50%;
-    z-index: 0;
-  }
-
-  &__btn {
-    position: absolute;
-    right: 10rem;
-    bottom: 15rem;
-    z-index: 1;
-
-    @media screen and (max-width: 400px) {
-      position: absolute;
-      left: 20rem;
-      bottom: 35rem;
-    }
-  }
+.header__text-box {
+  max-width: min(52rem, 100%);
 }
 
-/* -------------------------------- Animation ------------------------------- */
-
-@keyframes glitch {
-  0% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
-      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  14% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
-      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  15% {
-    text-shadow: -0.05em -0.025 0 rgba(255, 0, 0, 0.75),
-      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  49% {
-    text-shadow: -0.05em -0.025 0 rgba(255, 0, 0, 0.75),
-      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  50% {
-    text-shadow: 0.025em 0.05 0 rgba(255, 0, 0, 0.75),
-      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  99% {
-    text-shadow: 0.025em 0.05 0 rgba(255, 0, 0, 0.75),
-      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  100% {
-    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
-      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-}
-
-/* -------------------------------- artisian -------------------------------- */
 .artisian {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: solid #f3efde;
-  height: 106vh;
-  overflow: hidden;
-  position: relative;
+  @include collection-story-block;
 
-  @media screen and (max-width: 1500px) {
-    height: 100vh;
-  }
-
-  @media screen and (max-width: 1200px) {
-    height: 80vh;
-  }
-
-  @media screen and (max-width: 1024px) {
-    display: block;
-    position: relative;
-    color: #ffffff;
-    height: 110vh;
-  }
-
-  @media screen and (max-width: 400px) {
-    padding-top: 7rem;
-  }
-
-  &__heading {
-    font-size: 5rem;
-    font-family: Ubuntu Mono;
-    margin: 0;
-    padding-top: 8rem;
-    padding-left: 20rem;
-
-    @media screen and (max-width: 1200px) {
-      padding-left: 15rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-      font-size: 7rem;
-    }
-
-    @media screen and (max-width: 400px) {
-      font-size: 8rem;
-    }
+  &__img {
+    @include story-media;
   }
 
   &__subheading {
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding-top: 0.5rem;
-    padding-left: 20rem;
-    width: 3rem;
-    text-decoration: underline 2px;
-
-    @media screen and (max-width: 1200px) {
-      padding-left: 15rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-      font-size: 3rem;
-    }
-
-    @media screen and (max-width: 400px) {
-      font-size: 3rem;
-    }
-  }
-
-  &__para {
-    font-size: 2.5rem;
-    margin-top: 0;
-    padding-top: 2rem;
-    padding-left: 20rem;
-    width: 49rem;
-    margin-bottom: 9rem;
-
-    @media screen and (max-width: 1600px) {
-      font-size: 2rem;
-    }
-
-    @media screen and (max-width: 1200px) {
-      padding-left: 15rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-      padding-top: 5rem;
-      font-size: 4rem;
-      width: 72rem;
-      margin-bottom: 10rem;
-    }
-  }
-
-  &__img {
-    height: 100%;
-
-    @media screen and (max-width: 1024px) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      opacity: 0.98;
-      width: 100%;
-      filter: brightness(70%);
-    }
-  }
-
-  &__btn {
-    color: #000 !important;
-    border-color: #b6b6b693 !important;
-    margin-left: 20rem;
-
-    @media screen and (max-width: 1024px) {
-      color: #ffffff !important;
-    }
-    @media screen and (max-width: 450px) {
-      margin-left: 1rem;
-    }
-
-    &:hover {
-      transition: all 0.3s;
-      border-color: #ffffff !important;
-    }
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
 }
 
-.btn-explore {
-  margin-left: 20rem;
-
-  @media screen and (max-width: 1200px) {
-    margin-left: 15rem;
-  }
-  @media screen and (max-width: 400px) {
-    position: absolute;
-    left: 30%;
-  }
+.newarrival__heading {
+  margin: var(--section-space) 0 0.8rem;
+  padding: 0 var(--page-gutter);
+  font-size: clamp(3.2rem, 4vw, 4.4rem);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: #2a231c;
+  border-bottom: none;
+  width: auto;
 }
-
-/* ------------------------------ new arrivals ----------------------------- */
 
 .img-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2.8rem;
+
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media screen and (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .newarrival {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  justify-content: center;
+  display: block;
+  margin: 0;
+  position: relative;
+  background: #efe8dc;
 
-  @media screen and (max-width: 1024px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    margin-left: 2rem;
-    margin-right: 2rem;
+  a {
+    display: block;
+    color: inherit;
   }
 
   &__horizontal {
-    margin-top: 5rem;
-    margin-left: 5rem;
-    width: 30rem;
-    height: 18rem;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.5s ease;
   }
 
-  &__heading {
-    margin-top: 5rem;
-    margin-left: 14rem;
-    font-size: 2.5rem;
-    color: #252525da;
-    font-family: "Ubuntu Mono";
-    font-size: 3rem;
-    border-bottom: 0.2rem solid #8d6b51bb;
-    width: 18rem;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 10rem;
-      margin-left: 4rem;
-    }
-
-    @media screen and (max-width: 400px) {
-      font-size: 8rem;
-      margin-left: 4rem;
-    }
+  &:hover &__horizontal {
+    transform: scale(1.03);
   }
 }
 
 .btn-arrival {
-  margin: 2rem 0 1rem 5rem;
-  padding: 2rem 5rem;
-  margin-bottom: 5rem;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 1.4rem 0.2rem 1.6rem;
+  border: none;
+  background: transparent;
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
+  justify-content: flex-start;
 }
-
-/* ---------------------------- caterpillar section --------------------------- */
 
 .section-caterpillar {
-  background-image: url(/images/caterpillar/background.png);
+  background-image: url("../images/caterpillar/background.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   position: relative;
   width: 100%;
-  height: 105vh;
-  background-size: cover;
+  min-height: 42rem;
+  height: auto;
+  aspect-ratio: 16 / 7;
+  max-height: 64rem;
   overflow: hidden;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: var(--page-gutter);
 
-.caterpillar-button {
-  position: absolute;
-  left: 20rem;
-  top: 10rem;
-  z-index: 1;
-
-  @media screen and (max-width: 1200px) {
-    top: 75rem;
-    left: 35rem;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(28, 24, 20, 0.12) 0%,
+      rgba(28, 24, 20, 0.5) 100%
+    );
+    pointer-events: none;
   }
 
-  @media screen and (max-width: 400px) {
-    top: 100rem;
-    left: 20rem;
-  }
-}
-
-.caterpillar__btn {
-  @media screen and (max-width: 1200px) {
-    font-size: 4rem !important;
-    padding: 5rem 15rem !important;
-  }
-}
-
-.scribble-left {
-  justify-content: left;
-  position: absolute;
-  left: 90rem;
-  top: 60rem;
-  width: 35rem;
-
-  @media screen and (max-width: 1880px) {
-    top: 54rem;
-    left: 72rem;
-  }
-
-  @media screen and (max-width: 1712px) {
-    top: 50rem;
-    left: 42rem;
-  }
-
-  @media screen and (max-width: 1400px) {
-    top: 55rem;
-    left: 53rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    top: 5rem;
-    left: 12rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    top: 13rem;
-    left: 0rem;
-    width: 20rem;
+  @media screen and (max-width: 700px) {
+    aspect-ratio: 4 / 5;
+    max-height: none;
+    min-height: 36rem;
   }
 }
 
 .heading__caterpillar {
-  font-family: "Ubuntu Mono";
-  font-size: 12rem;
-  position: absolute;
-  left: 100rem;
-  top: 55rem;
-
-  @media screen and (max-width: 1880px) {
-    top: 50rem;
-    left: 80rem;
-  }
-
-  @media screen and (max-width: 1712px) {
-    top: 46rem;
-    left: 50rem;
-  }
-
-  @media screen and (max-width: 1400px) {
-    top: 50rem;
-    left: 61rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    top: 0rem;
-    left: 20rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    top: 7rem;
-    left: 5rem;
-    font-size: 10rem;
-  }
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3.6rem, 6vw, 6.8rem);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f3efde;
+  position: static;
+  margin: 0;
+  z-index: 1;
 }
-
-.scribble-right {
-  justify-content: right;
-  position: absolute;
-  left: 135rem;
-  top: 56rem;
-  width: 35rem;
-
-  @media screen and (max-width: 1880px) {
-    top: 50rem;
-    left: 130rem;
-  }
-
-  @media screen and (max-width: 1712px) {
-    top: 46rem;
-    left: 100rem;
-  }
-
-  @media screen and (max-width: 1400px) {
-    top: 50rem;
-    left: 110rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    top: 0rem;
-    left: 57rem;
-  }
-
-  @media screen and (max-width: 400px) {
-    top: 12rem;
-    left: 45rem;
-    width: 20rem;
-  }
-}
-
-/* ---------------------------- shelfmate section --------------------------- */
 
 .Shelfmate {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: solid #f3efde;
-  height: 100vh;
-  overflow: hidden;
-  padding: 5rem;
-  position: relative;
-
-  @media screen and (max-width: 1025px) {
-    height: 100vh;
-    width: 100%;
-    padding: 0rem;
-  }
-
-  &__heading {
-    font-size: 5rem;
-    font-family: Ubuntu Mono;
-    margin: 0;
-    padding-top: 5rem;
-    padding-left: 20rem;
-
-    @media screen and (max-width: 1600px) {
-      font-size: 5rem;
-      position: absolute;
-      top: 0rem;
-      left: 3rem;
-      padding-left: 15rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-      font-size: 7rem;
-      padding-top: 8rem;
-      padding-left: 10rem;
-      color: #f3efde;
-    }
-
-    @media screen and (max-width: 550px) {
-      font-size: 5rem !important;
-    }
-
-    @media screen and (max-width: 400px) {
-      font-size: 10rem !important;
-    }
-  }
-
-  &__subheading {
-    text-decoration: underline 2px;
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-top: 0.5rem;
-    padding-left: 20rem;
-    width: 49rem;
-
-    @media screen and (max-width: 1600px) {
-      position: absolute;
-      top: 12rem;
-      left: 3rem;
-      font-size: 3rem;
-      text-decoration: underline 1px;
-      width: 60rem;
-      padding-left: 15rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-      font-size: 3rem;
-      color: #f3efde;
-      top: 30rem;
-      left: -6rem;
-      text-decoration: underline 1px;
-      width: 70rem;
-    }
-    @media screen and (max-width: 450px) {
-      font-size: 3.5rem !important;
-    }
-  }
-
-  &__para {
-    font-size: 2.5rem;
-    margin-top: 0;
-    padding-top: 2rem;
-    padding-left: 20rem;
-    width: 49rem;
-    margin-bottom: 9rem;
-
-    @media screen and (max-width: 1600px) {
-      top: 34rem;
-      left: 3rem;
-      font-size: 2.5rem;
-      width: 60rem;
-      position: absolute;
-      padding-left: 15rem;
-    }
-
-    @media screen and (max-width: 1024px) {
-      font-size: 4rem;
-      width: 90rem;
-      top: 55rem;
-      left: -6rem;
-      color: #f3efde;
-    }
-
-    @media screen and (max-width: 450px) {
-      width: 70rem;
-      font-size: 2.8rem;
-    }
-
-    @media screen and (max-width: 400px) {
-      width: 70rem;
-      font-size: 4.4rem;
-    }
-  }
-
-  &__btn {
-    color: #2726264a;
-    left: 40%;
-
-    &:hover {
-      transition: all 0.3s;
-      border-color: #ac896ecb !important;
-    }
-
-    @media screen and (max-width: 1600px) {
-      border-color: #ac896ecb !important;
-      color: #ac896ecb;
-      top: 70rem;
-      left: 15rem;
-    }
-
-    @media screen and (max-width: 1000px) {
-      position: absolute;
-      top: 106rem;
-      color: #f3efde;
-    }
-
-    @media screen and (max-width: 400px) {
-      top: 96rem;
-      left: -13rem;
-    }
-
-    @media screen and (max-height: 850px) {
-      top: 130rem;
-    }
-    @media screen and (max-height: 768px) {
-      top: 70rem;
-    }
-  }
-}
-
-.btn-explore {
-  margin-left: 0;
+  @include collection-story-block;
 }

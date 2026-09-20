@@ -1,7 +1,9 @@
-@import "./base/base";
-@import "./layout/nav";
-@import "./components/button";
-@import "./base/typography";
-@import "./pages/caterpillar";
-@import "./layout/footer";
-@import "./layout/hamburger-nav";
+@use "base/base";
+@use "base/animations";
+@use "layout/collection";
+@use "layout/nav";
+@use "components/button";
+@use "base/typography";
+@use "layout/footer";
+@use "layout/hamburger-nav";
+@use "pages/caterpillar";

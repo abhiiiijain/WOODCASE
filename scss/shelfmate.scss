@@ -1,7 +1,9 @@
-@import "./base/base";
-@import "./layout/nav";
-@import "./components/button";
-@import "./base/typography";
-@import "./layout/footer";
-@import "./layout/hamburger-nav";
-@import "./pages/shelfmate";
+@use "base/base";
+@use "base/animations";
+@use "layout/collection";
+@use "layout/nav";
+@use "components/button";
+@use "base/typography";
+@use "layout/footer";
+@use "layout/hamburger-nav";
+@use "pages/shelfmate";

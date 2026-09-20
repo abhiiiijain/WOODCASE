@@ -1,7 +1,3 @@
-@import "./base/base";
-@import "./layout/nav";
-@import "./components/button";
-@import "./base/typography";
-@import "./layout/footer";
-@import "./layout/hamburger-nav";
-@import "./pages/buy";
+@use "base/base";
+@use "layout/footer";
+@use "pages/buy";

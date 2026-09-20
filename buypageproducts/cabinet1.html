@@ -4,116 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cabinet1 | Products</title>
-    <!-- Css link -->
-    <link rel="stylesheet" href="/css/buy.css" />
+    <title>COCO | WoodCase</title>
+    <link rel="stylesheet" href="../css/buy.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../images/icons/fav icon.png"
+    />
   </head>
 
   <body>
-    <!-- ------------------------------ Main section ------------------------------ -->
-    <header class="header"><a href="/html/shop.html"><img src="https://img.icons8.com/carbon-copy/50/000000/left.png"/
-      alt="back arrow"></a>
-      
+    <header class="product-bar">
+      <a href="../html/shop.html#section_cabinet" class="product-bar__back"
+        >Back to shop</a
+      >
+      <a href="../index.html" class="product-bar__logo">WOODCASE</a>
     </header>
 
-    <main class="main">
-      <section class="heading-img1">
-        <div class="heading-img1__img">
-          <img src="../images/Products/Cabinet/cabinet 1.0.png" />
-        </div>
-        <div class="heading-img1__content">
-          <h1 class="heading-img1__heading">MALM</h1>
-          <h2 class="heading-img1__price">RS. 26,900</h2>
-          <h3 class="heading-img1__description heading-tertiary">
-            DESCRIPTION
-          </h3>
-          <p class="heading-img1__para">
-            The Coco Cabinet is an exquisite modern piece of true craftsmanship. 
-            With its handmade doors from coconut weaving and a frame of both 
-            reclaimed teak wood and iron, the Cabinet is not just durable and 
-            of very high quality, its modern design makes it an irresistible 
-            piece to uplift any interior and the ideal storage solution at the same time.
-          </p>
-        </div>
-      </section>
-      <section class="heading-img2">
-        <div class="heading__image2">
-            <img src="../images/Products/Cabinet/cabinet 1.1.png" />
-        </div>
-        <div class="heading-img2__content">
-          <h3 class="heading-img2__description heading-tertiary">
-            Dimensions (90 * 45 * 160)
-          </h3>
-          <div class="button">
+    <main class="product">
+      <section class="product__hero">
+        <div class="product__gallery">
+          <input
+            class="product__choice product__choice--a"
+            type="radio"
+            name="product-photo"
+            id="photo-a"
+          />
+          <input
+            class="product__choice product__choice--b"
+            type="radio"
+            name="product-photo"
+            id="photo-b"
+            checked
+          />
+          <div class="product__stage">
             <img
-              src="../images/icons/icons8-buy-with-card-100.png"
-              alt="buy now"
-            /><a href="#">Buy Now</a>
+              class="product__photo product__photo--a"
+              src="../images/Products/Cabinet/cabinet 1.0.png"
+              alt="COCO cabinet"
+            />
+            <img
+              class="product__photo product__photo--b"
+              src="../images/Products/Cabinet/cabinet 1.1.png"
+              alt="COCO cabinet in a room"
+            />
           </div>
-          <div class="button">
-            <img
-              src="../images/icons/icons8-add-to-shopping-basket-90.png"
-              alt="add to cart"
-            /><a href="#">Add to Cart</a>
+          <div class="product__thumbs">
+            <label class="product__thumb product__thumb--a" for="photo-a">
+              <img src="../images/Products/Cabinet/cabinet 1.0.png" alt="" />
+            </label>
+            <label class="product__thumb product__thumb--b" for="photo-b">
+              <img src="../images/Products/Cabinet/cabinet 1.1.png" alt="" />
+            </label>
+          </div>
+        </div>
+        <div class="product__info">
+          <p class="product__eyebrow">Cabinets</p>
+          <h1 class="product__title">COCO</h1>
+          <p class="product__price">Rs. 19,000</p>
+          <p class="product__copy">
+            Handmade coconut-weave doors on a reclaimed teak and iron frame. A
+            compact cabinet for everyday storage, with the same warm material
+            mix used across the collection.
+          </p>
+          <dl class="product__specs">
+            <div class="product__spec">
+              <dt>Dimensions</dt>
+              <dd>90 × 45 × 160 cm</dd>
+            </div>
+            <div class="product__spec">
+              <dt>Materials</dt>
+              <dd>Reclaimed teak, coconut weave, iron</dd>
+            </div>
+          </dl>
+          <div class="product__actions">
+            <a class="product__buy" href="../html/shop.html">Buy now</a>
+            <a class="product__cart" href="../html/shop.html">Add to cart</a>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- -------------------------- footer beginning --------------------------- -->
-
-    <footer class="footer">
-      <ul class="footer__list">
-        <div class="footer-content footer__left-content">Services</div>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Installation Service</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Delivery Service</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Measuring Service</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Customer Service</a>
-        </li>
-      </ul>
-      <ul class="footer__list">
-        <div class="footer-content">Support</div>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Return Policy</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Contact Us</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Gift Guide</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Feedback</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">FAQ'S</a>
-        </li>
-      </ul>
-      <ul class="footer__list">
-        <div class="footer-content footer__right-content">About</div>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Stores</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Newsroom</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Working at WoodCase</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">Sustainability</a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__list-link">WoodCase for Business</a>
-        </li>
-      </ul>
-    </footer>
+    <div data-chrome="footer"></div>
+    <script src="../js/site-chrome.js"></script>
   </body>
 </html>
